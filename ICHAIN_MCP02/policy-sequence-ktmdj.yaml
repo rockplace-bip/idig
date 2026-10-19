@@ -1,0 +1,16 @@
+kind: FreeFlowPolicySequence
+apiVersion: api.ibm.com/v1
+metadata:
+  name: policy-sequence-ktmdj
+  namespace: ICHAIN_MCP02
+  version: 1.0.0
+  tags: []
+  domain: mcp
+  labels:
+    gatewayTypes:
+      - nano
+spec:
+  main:
+    - $ref: ICHAIN_MCP02:mcp-invoke-ktmdj:1.0.0
+  monitoring:
+    $ref: ICHAIN_MCP02:telemetry-ktmdj:1.0.0

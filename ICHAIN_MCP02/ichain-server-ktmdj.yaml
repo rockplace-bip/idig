@@ -1,0 +1,20 @@
+kind: MCPServer
+apiVersion: api.ibm.com/v1
+metadata:
+  name: ichain-server-ktmdj
+  namespace: ICHAIN_MCP02
+  version: 1.0.0
+  tags: []
+  domain: mcp
+  labels:
+    origin: mcp-mcp
+spec:
+  title: ichain
+  protocolVersion: V2025_11_25
+  quota:
+    $ref: ICHAIN_MCP02:quota-ktmdj:1.0.0
+  policy-sequence:
+    - $ref: ICHAIN_MCP02:policy-sequence-ktmdj:1.0.0
+  capabilities:
+    tools:
+      - $ref: ICHAIN_MCP02:ichain-tool-ktmdj:1.0.0

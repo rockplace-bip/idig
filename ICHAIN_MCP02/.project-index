@@ -1,0 +1,159 @@
+{
+  "nodes": [
+    {
+      "id": "107e63e7-7cbc-445c-b7d6-b242c9bb47ef:0",
+      "projectId": "Pkbjfjst",
+      "filePath": "ICHAIN_MCP02/ichain-tool-ktmdj.yaml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1792388603568,
+      "schemaVersion": 1,
+      "kind": "MCPTools",
+      "name": "ichain-tool-ktmdj",
+      "namespace": "ICHAIN_MCP02",
+      "version": "1.0.0",
+      "contentHash": "a6867766fc7aea3d"
+    },
+    {
+      "id": "17f1bf3c-092c-4a58-8d9a-d5ffca97f97b:0",
+      "projectId": "Pkbjfjst",
+      "filePath": "ICHAIN_MCP02/telemetry-ktmdj.yaml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1792388563300,
+      "schemaVersion": 1,
+      "kind": "Telemetry",
+      "name": "telemetry-ktmdj",
+      "namespace": "ICHAIN_MCP02",
+      "version": "1.0.0",
+      "contentHash": "71b2a825e670bc4e"
+    },
+    {
+      "id": "45ca0f5e-e9fb-4fb9-9678-25cb3a4cf58f:0",
+      "projectId": "Pkbjfjst",
+      "filePath": "ICHAIN_MCP02/ichain-server-ktmdj.yaml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1792388565614,
+      "schemaVersion": 1,
+      "kind": "MCPServer",
+      "name": "ichain-server-ktmdj",
+      "namespace": "ICHAIN_MCP02",
+      "version": "1.0.0",
+      "contentHash": "49c9f4a5645db1d1"
+    },
+    {
+      "id": "9813044f-aa00-4dc4-aeb5-d4978879cccd:0",
+      "projectId": "Pkbjfjst",
+      "filePath": "ICHAIN_MCP02/policy-sequence-ktmdj.yaml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1792388563897,
+      "schemaVersion": 1,
+      "kind": "FreeFlowPolicySequence",
+      "name": "policy-sequence-ktmdj",
+      "namespace": "ICHAIN_MCP02",
+      "version": "1.0.0",
+      "contentHash": "14586e29529df21c"
+    },
+    {
+      "id": "b52514e0-6d64-4add-9c5a-35cdc78c2097:0",
+      "projectId": "Pkbjfjst",
+      "filePath": "ICHAIN_MCP02/.project-index",
+      "docIndex": 0,
+      "assetType": "support",
+      "lastIndexed": 1792388523829,
+      "schemaVersion": 1
+    },
+    {
+      "id": "cefcfd1d-b685-497e-b462-be898720beea:0",
+      "projectId": "Pkbjfjst",
+      "filePath": "ICHAIN_MCP02/mcp-invoke-ktmdj.yaml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1792388562691,
+      "schemaVersion": 1,
+      "kind": "MCPInvoke",
+      "name": "mcp-invoke-ktmdj",
+      "namespace": "ICHAIN_MCP02",
+      "version": "1.0.0",
+      "contentHash": "468bd6e63b08fa49"
+    },
+    {
+      "id": "e7570709-998b-4ce4-a5cc-a37c07ef9e3c:0",
+      "projectId": "Pkbjfjst",
+      "filePath": "ICHAIN_MCP02/quota-ktmdj.yaml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1792388564442,
+      "schemaVersion": 1,
+      "kind": "Quota",
+      "name": "quota-ktmdj",
+      "namespace": "ICHAIN_MCP02",
+      "version": "1.0.0",
+      "contentHash": "13f291fb4ec9e655"
+    }
+  ],
+  "edges": [
+    {
+      "id": "4ccb9cd5-6c5a-4e91-9de9-461a5b2afb18",
+      "projectId": "Pkbjfjst",
+      "sourceNodeId": "45ca0f5e-e9fb-4fb9-9678-25cb3a4cf58f:0",
+      "targetNodeId": "107e63e7-7cbc-445c-b7d6-b242c9bb47ef:0",
+      "targetRefType": "same-project",
+      "targetRefString": "ICHAIN_MCP02:ichain-tool-ktmdj:1.0.0",
+      "targetRefKind": "resource",
+      "isValid": true,
+      "createdAt": 1792388565640,
+      "lastValidated": 1792388603576
+    },
+    {
+      "id": "52095feb-f136-40bd-8bc2-a86ef10f0a66",
+      "projectId": "Pkbjfjst",
+      "sourceNodeId": "45ca0f5e-e9fb-4fb9-9678-25cb3a4cf58f:0",
+      "targetNodeId": "9813044f-aa00-4dc4-aeb5-d4978879cccd:0",
+      "targetRefType": "same-project",
+      "targetRefString": "ICHAIN_MCP02:policy-sequence-ktmdj:1.0.0",
+      "targetRefKind": "resource",
+      "isValid": true,
+      "createdAt": 1792388565640,
+      "lastValidated": 1792388565640
+    },
+    {
+      "id": "7ffa5980-2cf5-4f8f-ad18-f54cb7c207ab",
+      "projectId": "Pkbjfjst",
+      "sourceNodeId": "9813044f-aa00-4dc4-aeb5-d4978879cccd:0",
+      "targetNodeId": "17f1bf3c-092c-4a58-8d9a-d5ffca97f97b:0",
+      "targetRefType": "same-project",
+      "targetRefString": "ICHAIN_MCP02:telemetry-ktmdj:1.0.0",
+      "targetRefKind": "resource",
+      "isValid": true,
+      "createdAt": 1792388563907,
+      "lastValidated": 1792388563907
+    },
+    {
+      "id": "c2c9a8b4-ec29-4818-9d5f-ac833a1c315f",
+      "projectId": "Pkbjfjst",
+      "sourceNodeId": "45ca0f5e-e9fb-4fb9-9678-25cb3a4cf58f:0",
+      "targetNodeId": "e7570709-998b-4ce4-a5cc-a37c07ef9e3c:0",
+      "targetRefType": "same-project",
+      "targetRefString": "ICHAIN_MCP02:quota-ktmdj:1.0.0",
+      "targetRefKind": "resource",
+      "isValid": true,
+      "createdAt": 1792388565640,
+      "lastValidated": 1792388565640
+    },
+    {
+      "id": "dfeeb9c8-fdec-46a9-ae8b-d0bddc3d86c1",
+      "projectId": "Pkbjfjst",
+      "sourceNodeId": "9813044f-aa00-4dc4-aeb5-d4978879cccd:0",
+      "targetNodeId": "cefcfd1d-b685-497e-b462-be898720beea:0",
+      "targetRefType": "same-project",
+      "targetRefString": "ICHAIN_MCP02:mcp-invoke-ktmdj:1.0.0",
+      "targetRefKind": "resource",
+      "isValid": true,
+      "createdAt": 1792388563908,
+      "lastValidated": 1792388563908
+    }
+  ]
+}
