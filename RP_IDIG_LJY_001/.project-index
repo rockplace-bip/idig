@@ -1,0 +1,180 @@
+{
+  "nodes": [
+    {
+      "id": "292624e3-04ef-47bf-a005-8db1f1fa7fe6:0",
+      "projectId": "HeHkGF4U",
+      "filePath": "RP_IDIG_LJY_001/rp_idig_ljy_001-quota-3y2i9.yaml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1792480225414,
+      "schemaVersion": 1,
+      "kind": "Quota",
+      "name": "rp_idig_ljy_001-quota-3y2i9",
+      "namespace": "RP_IDIG_LJY_001",
+      "version": "1.0",
+      "contentHash": "5cb79dcb66dac058"
+    },
+    {
+      "id": "414f7ed9-e05c-40b0-86ce-de1f77a25c5b:0",
+      "projectId": "HeHkGF4U",
+      "filePath": "RP_IDIG_LJY_001/rp_idig_ljy_001-freeflowpolicysequence-3y2i9.yaml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1792480224520,
+      "schemaVersion": 1,
+      "kind": "FreeFlowPolicySequence",
+      "name": "rp_idig_ljy_001-freeflowpolicysequence-3y2i9",
+      "namespace": "RP_IDIG_LJY_001",
+      "version": "1.0",
+      "contentHash": "c0bd4c14a88acd23"
+    },
+    {
+      "id": "4d37e0b9-ae16-47f9-9afe-6ec72461abe9:0",
+      "projectId": "HeHkGF4U",
+      "filePath": "RP_IDIG_LJY_001/telemetry-3y2i9.yaml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1792480223785,
+      "schemaVersion": 1,
+      "kind": "Telemetry",
+      "name": "telemetry-3y2i9",
+      "namespace": "RP_IDIG_LJY_001",
+      "version": "1.0",
+      "contentHash": "1cf5c6d4bcd89776"
+    },
+    {
+      "id": "ac7d945d-4889-49fb-844a-34049c608cfc:0",
+      "projectId": "HeHkGF4U",
+      "filePath": "RP_IDIG_LJY_001/invoke-3y2i9.yaml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1792480223094,
+      "schemaVersion": 1,
+      "kind": "Invoke",
+      "name": "invoke-3y2i9",
+      "namespace": "RP_IDIG_LJY_001",
+      "version": "1.0",
+      "contentHash": "66aa909cb608bfdf"
+    },
+    {
+      "id": "d09d24b8-d9d3-4e75-b681-765e9b3f6aaf:0",
+      "projectId": "HeHkGF4U",
+      "filePath": "RP_IDIG_LJY_001/open-meteo-weather-forecast-api-server-3y2i9.yaml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1792480227052,
+      "schemaVersion": 1,
+      "kind": "MCPServer",
+      "name": "open-meteo-weather-forecast-api-server-3y2i9",
+      "namespace": "RP_IDIG_LJY_001",
+      "version": "1.0",
+      "contentHash": "5ba50a5feb7ad0ad"
+    },
+    {
+      "id": "e4138fc3-e81a-4cff-9f8e-7f45d7129de1:0",
+      "projectId": "HeHkGF4U",
+      "filePath": "RP_IDIG_LJY_001/.project-index",
+      "docIndex": 0,
+      "assetType": "support",
+      "lastIndexed": 1792462579207,
+      "schemaVersion": 1
+    },
+    {
+      "id": "f10fac51-817d-4134-b23f-862745c256ea:0",
+      "projectId": "HeHkGF4U",
+      "filePath": "RP_IDIG_LJY_001/open-meteo-weather-forecast-api-spec.yml",
+      "docIndex": 0,
+      "assetType": "support",
+      "lastIndexed": 1792480222312,
+      "schemaVersion": 1
+    },
+    {
+      "id": "f3283f43-2add-422b-ab34-023edc708121:0",
+      "projectId": "HeHkGF4U",
+      "filePath": "RP_IDIG_LJY_001/open-meteo-weather-forecast-api-tool-3y2i9.yaml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1792480226174,
+      "schemaVersion": 1,
+      "kind": "MCPTools",
+      "name": "open-meteo-weather-forecast-api-tool-3y2i9",
+      "namespace": "RP_IDIG_LJY_001",
+      "version": "1.0",
+      "contentHash": "f895745f144c0fbd"
+    }
+  ],
+  "edges": [
+    {
+      "id": "747c6feb-157a-4aa9-ad89-0c7081bfe0e3",
+      "projectId": "HeHkGF4U",
+      "sourceNodeId": "414f7ed9-e05c-40b0-86ce-de1f77a25c5b:0",
+      "targetNodeId": "4d37e0b9-ae16-47f9-9afe-6ec72461abe9:0",
+      "targetRefType": "same-project",
+      "targetRefString": "RP_IDIG_LJY_001:telemetry-3y2i9:1.0",
+      "targetRefKind": "resource",
+      "isValid": true,
+      "createdAt": 1792480224540,
+      "lastValidated": 1792480224540
+    },
+    {
+      "id": "c4b8b24a-b93a-457d-b474-2dff4c172789",
+      "projectId": "HeHkGF4U",
+      "sourceNodeId": "414f7ed9-e05c-40b0-86ce-de1f77a25c5b:0",
+      "targetNodeId": "ac7d945d-4889-49fb-844a-34049c608cfc:0",
+      "targetRefType": "same-project",
+      "targetRefString": "RP_IDIG_LJY_001:invoke-3y2i9:1.0",
+      "targetRefKind": "resource",
+      "isValid": true,
+      "createdAt": 1792480224540,
+      "lastValidated": 1792480224540
+    },
+    {
+      "id": "d09cf79d-7102-4f6e-93b7-8a958f4b6ce0",
+      "projectId": "HeHkGF4U",
+      "sourceNodeId": "f3283f43-2add-422b-ab34-023edc708121:0",
+      "targetNodeId": "f10fac51-817d-4134-b23f-862745c256ea:0",
+      "targetRefType": "same-project",
+      "targetRefString": "./open-meteo-weather-forecast-api-spec.yml",
+      "targetRefKind": "support",
+      "isValid": true,
+      "createdAt": 1792480226191,
+      "lastValidated": 1792480226191
+    },
+    {
+      "id": "d1ebb4a6-10ab-42eb-a03f-004c72e3225f",
+      "projectId": "HeHkGF4U",
+      "sourceNodeId": "d09d24b8-d9d3-4e75-b681-765e9b3f6aaf:0",
+      "targetNodeId": "292624e3-04ef-47bf-a005-8db1f1fa7fe6:0",
+      "targetRefType": "same-project",
+      "targetRefString": "RP_IDIG_LJY_001:rp_idig_ljy_001-quota-3y2i9:1.0",
+      "targetRefKind": "resource",
+      "isValid": true,
+      "createdAt": 1792480227072,
+      "lastValidated": 1792480227072
+    },
+    {
+      "id": "db367a36-5233-497d-97fb-be41b43698d0",
+      "projectId": "HeHkGF4U",
+      "sourceNodeId": "d09d24b8-d9d3-4e75-b681-765e9b3f6aaf:0",
+      "targetNodeId": "414f7ed9-e05c-40b0-86ce-de1f77a25c5b:0",
+      "targetRefType": "same-project",
+      "targetRefString": "RP_IDIG_LJY_001:rp_idig_ljy_001-freeflowpolicysequence-3y2i9:1.0",
+      "targetRefKind": "resource",
+      "isValid": true,
+      "createdAt": 1792480227071,
+      "lastValidated": 1792480227071
+    },
+    {
+      "id": "e185e725-d843-4300-a63e-8b22638ccef4",
+      "projectId": "HeHkGF4U",
+      "sourceNodeId": "d09d24b8-d9d3-4e75-b681-765e9b3f6aaf:0",
+      "targetNodeId": "f3283f43-2add-422b-ab34-023edc708121:0",
+      "targetRefType": "same-project",
+      "targetRefString": "RP_IDIG_LJY_001:open-meteo-weather-forecast-api-tool-3y2i9:1.0",
+      "targetRefKind": "resource",
+      "isValid": true,
+      "createdAt": 1792480227072,
+      "lastValidated": 1792480227072
+    }
+  ]
+}
