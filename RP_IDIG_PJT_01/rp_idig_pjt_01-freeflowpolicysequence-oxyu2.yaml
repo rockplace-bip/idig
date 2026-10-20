@@ -1,0 +1,16 @@
+kind: FreeFlowPolicySequence
+apiVersion: api.ibm.com/v1
+metadata:
+  name: rp_idig_pjt_01-freeflowpolicysequence-oxyu2
+  namespace: RP_IDIG_PJT_01
+  version: "1.0"
+  tags: []
+  domain: mcp
+  labels:
+    gatewayTypes:
+      - nano
+spec:
+  main:
+    - $ref: RP_IDIG_PJT_01:invoke-oxyu2:1.0
+  monitoring:
+    $ref: RP_IDIG_PJT_01:telemetry-oxyu2:1.0

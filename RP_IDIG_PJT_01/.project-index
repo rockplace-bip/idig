@@ -1,0 +1,180 @@
+{
+  "nodes": [
+    {
+      "id": "2b48d8a9-548f-41f4-9b4a-801e687aa525:0",
+      "projectId": "3Rs0LGef",
+      "filePath": "RP_IDIG_PJT_01/.project-index",
+      "docIndex": 0,
+      "assetType": "support",
+      "lastIndexed": 1792380763468,
+      "schemaVersion": 1
+    },
+    {
+      "id": "2cc9889f-080f-4cef-8c39-0d40ca6442aa:0",
+      "projectId": "3Rs0LGef",
+      "filePath": "RP_IDIG_PJT_01/petstore3bywmagw-tool-oxyu2.yaml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1792135822748,
+      "schemaVersion": 1,
+      "kind": "MCPTools",
+      "name": "petstore3bywmagw-tool-oxyu2",
+      "namespace": "RP_IDIG_PJT_01",
+      "version": "1.0",
+      "contentHash": "f0b4f7f0d85251cf"
+    },
+    {
+      "id": "64c2ec3c-62ec-491e-9d79-68f7c00b7865:0",
+      "projectId": "3Rs0LGef",
+      "filePath": "RP_IDIG_PJT_01/petstore3bywmagw-server-oxyu2.yaml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1792135823454,
+      "schemaVersion": 1,
+      "kind": "MCPServer",
+      "name": "petstore3bywmagw-server-oxyu2",
+      "namespace": "RP_IDIG_PJT_01",
+      "version": "1.0",
+      "contentHash": "b39e0e27ce7f82a2"
+    },
+    {
+      "id": "80d0c45d-dd71-4768-afba-2679002c94c1:0",
+      "projectId": "3Rs0LGef",
+      "filePath": "RP_IDIG_PJT_01/petstore3bywmagw-spec.yml",
+      "docIndex": 0,
+      "assetType": "support",
+      "lastIndexed": 1792135818602,
+      "schemaVersion": 1
+    },
+    {
+      "id": "9b0a7d45-1cca-4c29-9324-e010231ac008:0",
+      "projectId": "3Rs0LGef",
+      "filePath": "RP_IDIG_PJT_01/telemetry-oxyu2.yaml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1792135820597,
+      "schemaVersion": 1,
+      "kind": "Telemetry",
+      "name": "telemetry-oxyu2",
+      "namespace": "RP_IDIG_PJT_01",
+      "version": "1.0",
+      "contentHash": "1c367490ee6d276c"
+    },
+    {
+      "id": "9d898369-cd62-4f82-83f9-eaea7a7ea0a0:0",
+      "projectId": "3Rs0LGef",
+      "filePath": "RP_IDIG_PJT_01/rp_idig_pjt_01-freeflowpolicysequence-oxyu2.yaml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1792135821305,
+      "schemaVersion": 1,
+      "kind": "FreeFlowPolicySequence",
+      "name": "rp_idig_pjt_01-freeflowpolicysequence-oxyu2",
+      "namespace": "RP_IDIG_PJT_01",
+      "version": "1.0",
+      "contentHash": "eae55d326e82aac5"
+    },
+    {
+      "id": "a13421f6-b309-484d-ba98-ac6a033f2455:0",
+      "projectId": "3Rs0LGef",
+      "filePath": "RP_IDIG_PJT_01/rp_idig_pjt_01-quota-oxyu2.yaml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1792135822028,
+      "schemaVersion": 1,
+      "kind": "Quota",
+      "name": "rp_idig_pjt_01-quota-oxyu2",
+      "namespace": "RP_IDIG_PJT_01",
+      "version": "1.0",
+      "contentHash": "69deab64021a2461"
+    },
+    {
+      "id": "a47d8f83-c96e-4c43-9eb6-60f1f8eeef93:0",
+      "projectId": "3Rs0LGef",
+      "filePath": "RP_IDIG_PJT_01/invoke-oxyu2.yaml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1792137797042,
+      "schemaVersion": 1,
+      "kind": "Invoke",
+      "name": "invoke-oxyu2",
+      "namespace": "RP_IDIG_PJT_01",
+      "version": "1.0",
+      "contentHash": "6a876d182511fc12"
+    }
+  ],
+  "edges": [
+    {
+      "id": "084227ff-c17c-49e8-bf4f-dc63026eb085",
+      "projectId": "3Rs0LGef",
+      "sourceNodeId": "2cc9889f-080f-4cef-8c39-0d40ca6442aa:0",
+      "targetNodeId": "80d0c45d-dd71-4768-afba-2679002c94c1:0",
+      "targetRefType": "same-project",
+      "targetRefString": "./petstore3bywmagw-spec.yml",
+      "targetRefKind": "support",
+      "isValid": true,
+      "createdAt": 1792135822763,
+      "lastValidated": 1792135822763
+    },
+    {
+      "id": "2a9ff6b4-ddfb-46cb-92b3-cb5d0ab7ebb8",
+      "projectId": "3Rs0LGef",
+      "sourceNodeId": "9d898369-cd62-4f82-83f9-eaea7a7ea0a0:0",
+      "targetNodeId": "9b0a7d45-1cca-4c29-9324-e010231ac008:0",
+      "targetRefType": "same-project",
+      "targetRefString": "RP_IDIG_PJT_01:telemetry-oxyu2:1.0",
+      "targetRefKind": "resource",
+      "isValid": true,
+      "createdAt": 1792135821326,
+      "lastValidated": 1792135821326
+    },
+    {
+      "id": "63200096-f677-44d1-9ddd-c4a2ab7840c7",
+      "projectId": "3Rs0LGef",
+      "sourceNodeId": "64c2ec3c-62ec-491e-9d79-68f7c00b7865:0",
+      "targetNodeId": "9d898369-cd62-4f82-83f9-eaea7a7ea0a0:0",
+      "targetRefType": "same-project",
+      "targetRefString": "RP_IDIG_PJT_01:rp_idig_pjt_01-freeflowpolicysequence-oxyu2:1.0",
+      "targetRefKind": "resource",
+      "isValid": true,
+      "createdAt": 1792135823476,
+      "lastValidated": 1792135823476
+    },
+    {
+      "id": "7edefbc8-95e0-49ca-b022-2ddf9b68f174",
+      "projectId": "3Rs0LGef",
+      "sourceNodeId": "9d898369-cd62-4f82-83f9-eaea7a7ea0a0:0",
+      "targetNodeId": "a47d8f83-c96e-4c43-9eb6-60f1f8eeef93:0",
+      "targetRefType": "same-project",
+      "targetRefString": "RP_IDIG_PJT_01:invoke-oxyu2:1.0",
+      "targetRefKind": "resource",
+      "isValid": true,
+      "createdAt": 1792135821327,
+      "lastValidated": 1792137797049
+    },
+    {
+      "id": "cc13d3e4-d12f-4be3-9379-8c2c7f2fd7ae",
+      "projectId": "3Rs0LGef",
+      "sourceNodeId": "64c2ec3c-62ec-491e-9d79-68f7c00b7865:0",
+      "targetNodeId": "a13421f6-b309-484d-ba98-ac6a033f2455:0",
+      "targetRefType": "same-project",
+      "targetRefString": "RP_IDIG_PJT_01:rp_idig_pjt_01-quota-oxyu2:1.0",
+      "targetRefKind": "resource",
+      "isValid": true,
+      "createdAt": 1792135823476,
+      "lastValidated": 1792135823476
+    },
+    {
+      "id": "fc5d3399-47ad-4dc1-a453-df220ec60c83",
+      "projectId": "3Rs0LGef",
+      "sourceNodeId": "64c2ec3c-62ec-491e-9d79-68f7c00b7865:0",
+      "targetNodeId": "2cc9889f-080f-4cef-8c39-0d40ca6442aa:0",
+      "targetRefType": "same-project",
+      "targetRefString": "RP_IDIG_PJT_01:petstore3bywmagw-tool-oxyu2:1.0",
+      "targetRefKind": "resource",
+      "isValid": true,
+      "createdAt": 1792135823476,
+      "lastValidated": 1792135823476
+    }
+  ]
+}

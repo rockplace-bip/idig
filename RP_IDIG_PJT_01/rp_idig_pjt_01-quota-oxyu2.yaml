@@ -1,0 +1,16 @@
+kind: Quota
+apiVersion: api.ibm.com/v1
+metadata:
+  name: rp_idig_pjt_01-quota-oxyu2
+  namespace: RP_IDIG_PJT_01
+  version: "1.0"
+  tags: []
+  domain: mcp
+spec:
+  maxRequest: 1000
+  interval: 1m
+  extensions:
+    dp-nano-gateway:
+      apiVersion: api.ibm.com/v1
+      spec:
+        exceedAction: return429

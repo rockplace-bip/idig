@@ -1,0 +1,20 @@
+kind: MCPServer
+apiVersion: api.ibm.com/v1
+metadata:
+  name: petstore3bywmagw-server-oxyu2
+  namespace: RP_IDIG_PJT_01
+  version: "1.0"
+  tags: []
+  domain: mcp
+  labels:
+    origin: mcp-rest
+spec:
+  title: petstore3byWMAGW MCP Server
+  protocolVersion: V2025_11_25
+  quota:
+    $ref: RP_IDIG_PJT_01:rp_idig_pjt_01-quota-oxyu2:1.0
+  policy-sequence:
+    - $ref: RP_IDIG_PJT_01:rp_idig_pjt_01-freeflowpolicysequence-oxyu2:1.0
+  capabilities:
+    tools:
+      - $ref: RP_IDIG_PJT_01:petstore3bywmagw-tool-oxyu2:1.0

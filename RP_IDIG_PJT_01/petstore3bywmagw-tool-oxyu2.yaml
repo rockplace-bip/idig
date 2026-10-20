@@ -1,0 +1,523 @@
+kind: MCPTools
+apiVersion: api.ibm.com/v1
+metadata:
+  name: petstore3bywmagw-tool-oxyu2
+  namespace: RP_IDIG_PJT_01
+  version: "1.0"
+  tags: []
+  description: "This is a sample server Petstore server.  You can find out more
+    about Swagger at [http://swagger.io](http://swagger.io) or on
+    [irc.freenode.net, #swagger](http://swagger.io/irc/).  For this sample, you
+    can use the api key `special-key` to test the authorization filters."
+  domain: mcp
+  labels:
+    api-spec: ./petstore3bywmagw-spec.yml
+spec:
+  tools:
+    - name: updatePet
+      description: Update an existing pet
+      inputSchema:
+        type: object
+        properties:
+          category:
+            type: object
+            properties:
+              id: &a1
+                type: integer
+                format: int64
+              name: &a2
+                type: string
+            xml: &a3
+              name: Category
+          id: &a4
+            type: integer
+            format: int64
+          name: &a5
+            type: string
+            example: doggie
+          photoUrls:
+            type: array
+            xml: &a6
+              wrapped: true
+            items: &a7
+              type: string
+              xml:
+                name: photoUrl
+          status: &a8
+            type: string
+            description: pet status in the store
+            enum:
+              - available
+              - pending
+              - sold
+          tags:
+            type: array
+            xml: &a9
+              wrapped: true
+            items:
+              type: object
+              properties:
+                id: &a10
+                  type: integer
+                  format: int64
+                name: &a11
+                  type: string
+              xml: &a12
+                name: Tag
+        required:
+          - name
+          - photoUrls
+      title: Update an existing pet
+      x-api-binding:
+        operationPath: /pet
+        operationMethod: PUT
+        api:
+          $path: ./petstore3bywmagw-spec.yml
+    - name: addPet
+      description: Add a new pet to the store
+      inputSchema:
+        type: object
+        properties:
+          category:
+            type: object
+            properties:
+              id: *a1
+              name: *a2
+            xml: *a3
+          id: *a4
+          name: *a5
+          photoUrls:
+            type: array
+            xml: *a6
+            items: *a7
+          status: *a8
+          tags:
+            type: array
+            xml: *a9
+            items:
+              type: object
+              properties:
+                id: *a10
+                name: *a11
+              xml: *a12
+        required:
+          - name
+          - photoUrls
+      title: Add a new pet to the store
+      x-api-binding:
+        operationPath: /pet
+        operationMethod: POST
+        api:
+          $path: ./petstore3bywmagw-spec.yml
+    - name: getUserByName
+      description: Get user by user name
+      inputSchema:
+        type: object
+        properties:
+          username:
+            description: "The name that needs to be fetched. Use user1 for testing. "
+            x-parameter-location: path
+            type: string
+            readOnly: false
+        required:
+          - username
+      title: Get user by user name
+      x-api-binding:
+        operationPath: /user/{username}
+        operationMethod: GET
+        api:
+          $path: ./petstore3bywmagw-spec.yml
+    - name: updateUser
+      description: This can only be done by the logged in user.
+      inputSchema:
+        type: object
+        properties:
+          username:
+            description: name that need to be updated
+            x-parameter-location: path
+            type: string
+            readOnly: false
+          email: &a13
+            type: string
+          firstName: &a14
+            type: string
+          id: &a15
+            type: integer
+            format: int64
+          lastName: &a16
+            type: string
+          password: &a17
+            type: string
+          phone: &a18
+            type: string
+          userStatus: &a19
+            type: integer
+            description: User Status
+            format: int32
+          body_username: &a20
+            type: string
+        required:
+          - username
+      title: Updated user
+      x-api-binding:
+        operationPath: /user/{username}
+        operationMethod: PUT
+        api:
+          $path: ./petstore3bywmagw-spec.yml
+    - name: deleteUser
+      description: This can only be done by the logged in user.
+      inputSchema:
+        type: object
+        properties:
+          username:
+            description: The name that needs to be deleted
+            x-parameter-location: path
+            type: string
+            readOnly: false
+        required:
+          - username
+      title: Delete user
+      x-api-binding:
+        operationPath: /user/{username}
+        operationMethod: DELETE
+        api:
+          $path: ./petstore3bywmagw-spec.yml
+    - name: findPetsByStatus
+      description: Multiple status values can be provided with comma separated strings
+      inputSchema:
+        type: object
+        properties:
+          status:
+            description: Status values that need to be considered for filter
+            x-parameter-location: query
+            type: array
+            readOnly: false
+            items:
+              type: string
+              default: available
+              enum:
+                - available
+                - pending
+                - sold
+        required:
+          - status
+      title: Finds Pets by status
+      x-api-binding:
+        operationPath: /pet/findByStatus
+        operationMethod: GET
+        api:
+          $path: ./petstore3bywmagw-spec.yml
+    - name: createUsersWithListInput
+      description: Creates list of users with given input array
+      inputSchema:
+        type: object
+        properties:
+          body:
+            type: array
+            items:
+              type: object
+              properties:
+                email: *a13
+                firstName: *a14
+                id: *a15
+                lastName: *a16
+                password: *a17
+                phone: *a18
+                userStatus: *a19
+                username: *a20
+              xml: &a21
+                name: User
+        required:
+          - body
+      title: Creates list of users with given input array
+      x-api-binding:
+        operationPath: /user/createWithList
+        operationMethod: POST
+        api:
+          $path: ./petstore3bywmagw-spec.yml
+    - name: uploadFile
+      description: uploads an image
+      inputSchema:
+        type: object
+        properties:
+          petId:
+            description: ID of pet to update
+            x-parameter-location: path
+            type: integer
+            format: int64
+            readOnly: false
+          additionalMetadata:
+            type: string
+            description: Additional data to pass to server
+            readOnly: false
+          file:
+            type: string
+            description: file to upload
+            format: binary
+            readOnly: false
+        required:
+          - petId
+      title: uploads an image
+      x-api-binding:
+        operationPath: /pet/{petId}/uploadImage
+        operationMethod: POST
+        api:
+          $path: ./petstore3bywmagw-spec.yml
+    - name: getInventory
+      description: Returns a map of status codes to quantities
+      inputSchema:
+        type: object
+        properties: {}
+      title: Returns pet inventories by status
+      x-api-binding:
+        operationPath: /store/inventory
+        operationMethod: GET
+        api:
+          $path: ./petstore3bywmagw-spec.yml
+    - name: loginUser
+      description: Logs user into the system
+      inputSchema:
+        type: object
+        properties:
+          username:
+            description: The user name for login
+            x-parameter-location: query
+            type: string
+            readOnly: false
+          password:
+            description: The password for login in clear text
+            x-parameter-location: query
+            type: string
+            readOnly: false
+        required:
+          - username
+          - password
+      title: Logs user into the system
+      x-api-binding:
+        operationPath: /user/login
+        operationMethod: GET
+        api:
+          $path: ./petstore3bywmagw-spec.yml
+    - name: createUser
+      description: This can only be done by the logged in user.
+      inputSchema:
+        type: object
+        properties:
+          email: *a13
+          firstName: *a14
+          id: *a15
+          lastName: *a16
+          password: *a17
+          phone: *a18
+          userStatus: *a19
+          username: *a20
+      title: Create user
+      x-api-binding:
+        operationPath: /user
+        operationMethod: POST
+        api:
+          $path: ./petstore3bywmagw-spec.yml
+    - name: createUsersWithArrayInput
+      description: Creates list of users with given input array
+      inputSchema:
+        type: object
+        properties:
+          body:
+            type: array
+            items:
+              type: object
+              properties:
+                email: *a13
+                firstName: *a14
+                id: *a15
+                lastName: *a16
+                password: *a17
+                phone: *a18
+                userStatus: *a19
+                username: *a20
+              xml: *a21
+        required:
+          - body
+      title: Creates list of users with given input array
+      x-api-binding:
+        operationPath: /user/createWithArray
+        operationMethod: POST
+        api:
+          $path: ./petstore3bywmagw-spec.yml
+    - name: findPetsByTags
+      description: Multiple tags can be provided with comma separated strings. Use
+        tag1, tag2, tag3 for testing.
+      inputSchema:
+        type: object
+        properties:
+          tags:
+            description: Tags to filter by
+            x-parameter-location: query
+            type: array
+            readOnly: false
+            items:
+              type: string
+        required:
+          - tags
+      title: Finds Pets by tags
+      x-api-binding:
+        operationPath: /pet/findByTags
+        operationMethod: GET
+        api:
+          $path: ./petstore3bywmagw-spec.yml
+    - name: placeOrder
+      description: Place an order for a pet
+      inputSchema:
+        type: object
+        properties:
+          complete:
+            type: boolean
+          id:
+            type: integer
+            format: int64
+          petId:
+            type: integer
+            format: int64
+          quantity:
+            type: integer
+            format: int32
+          shipDate:
+            type: string
+            format: date-time
+          status:
+            type: string
+            description: Order Status
+            enum:
+              - placed
+              - approved
+              - delivered
+      title: Place an order for a pet
+      x-api-binding:
+        operationPath: /store/order
+        operationMethod: POST
+        api:
+          $path: ./petstore3bywmagw-spec.yml
+    - name: logoutUser
+      description: Logs out current logged in user session
+      inputSchema:
+        type: object
+        properties: {}
+      title: Logs out current logged in user session
+      x-api-binding:
+        operationPath: /user/logout
+        operationMethod: GET
+        api:
+          $path: ./petstore3bywmagw-spec.yml
+    - name: getPetById
+      description: Returns a single pet
+      inputSchema:
+        type: object
+        properties:
+          petId:
+            description: ID of pet to return
+            x-parameter-location: path
+            type: integer
+            format: int64
+            readOnly: false
+        required:
+          - petId
+      title: Find pet by ID
+      x-api-binding:
+        operationPath: /pet/{petId}
+        operationMethod: GET
+        api:
+          $path: ./petstore3bywmagw-spec.yml
+    - name: updatePetWithForm
+      description: Updates a pet in the store with form data
+      inputSchema:
+        type: object
+        properties:
+          petId:
+            description: ID of pet that needs to be updated
+            x-parameter-location: path
+            type: integer
+            format: int64
+            readOnly: false
+          name:
+            type: string
+            description: Updated name of the pet
+            readOnly: false
+          status:
+            type: string
+            description: Updated status of the pet
+            readOnly: false
+        required:
+          - petId
+      title: Updates a pet in the store with form data
+      x-api-binding:
+        operationPath: /pet/{petId}
+        operationMethod: POST
+        api:
+          $path: ./petstore3bywmagw-spec.yml
+    - name: deletePet
+      description: Deletes a pet
+      inputSchema:
+        type: object
+        properties:
+          api_key:
+            description: api_key parameter
+            x-parameter-location: header
+            type: string
+            readOnly: false
+          petId:
+            description: Pet id to delete
+            x-parameter-location: path
+            type: integer
+            format: int64
+            readOnly: false
+        required:
+          - petId
+      title: Deletes a pet
+      x-api-binding:
+        operationPath: /pet/{petId}
+        operationMethod: DELETE
+        api:
+          $path: ./petstore3bywmagw-spec.yml
+    - name: getOrderById
+      description: For valid response try integer IDs with value >= 1 and <= 10. Other
+        values will generated exceptions
+      inputSchema:
+        type: object
+        properties:
+          orderId:
+            description: ID of pet that needs to be fetched
+            x-parameter-location: path
+            type: integer
+            maximum: 10
+            minimum: 1
+            format: int64
+            readOnly: false
+        required:
+          - orderId
+      title: Find purchase order by ID
+      x-api-binding:
+        operationPath: /store/order/{orderId}
+        operationMethod: GET
+        api:
+          $path: ./petstore3bywmagw-spec.yml
+    - name: deleteOrder
+      description: For valid response try integer IDs with positive integer value.
+        Negative or non-integer values will generate API errors
+      inputSchema:
+        type: object
+        properties:
+          orderId:
+            description: ID of the order that needs to be deleted
+            x-parameter-location: path
+            type: integer
+            minimum: 1
+            format: int64
+            readOnly: false
+        required:
+          - orderId
+      title: Delete purchase order by ID
+      x-api-binding:
+        operationPath: /store/order/{orderId}
+        operationMethod: DELETE
+        api:
+          $path: ./petstore3bywmagw-spec.yml
