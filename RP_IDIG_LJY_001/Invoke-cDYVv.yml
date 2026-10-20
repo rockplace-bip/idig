@@ -1,0 +1,20 @@
+kind: Invoke
+apiVersion: api.ibm.com/v1
+metadata:
+  name: Invoke-cDYVv
+  namespace: RP_IDIG_LJY_001
+  version: '1.0'
+  tags: []
+  labels:
+    gatewayTypes:
+      - nano
+spec:
+  endpoint:
+    http:
+      target:
+        persistentConnections: false
+        timeout: 30
+        url: ''
+        decompressResponse: false
+        followRedirects: false
+        chunkedUpload: false

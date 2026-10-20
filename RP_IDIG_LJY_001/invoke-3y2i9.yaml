@@ -3,12 +3,12 @@ apiVersion: api.ibm.com/v1
 metadata:
   name: invoke-3y2i9
   namespace: RP_IDIG_LJY_001
-  version: "1.0"
+  version: '1.0'
   tags: []
-  domain: mcp
   labels:
     gatewayTypes:
       - nano
+  domain: mcp
 spec:
   endpoint:
     http:

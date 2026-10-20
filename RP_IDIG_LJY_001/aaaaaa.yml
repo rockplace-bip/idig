@@ -1,0 +1,15 @@
+kind: FreeFlowPolicySequence
+apiVersion: api.ibm.com/v1
+metadata:
+  name: aaaaaa
+  namespace: RP_IDIG_LJY_001
+  version: '1.0'
+  tags: []
+  labels:
+    gatewayTypes:
+      - nano
+spec:
+  main:
+    - $ref: RP_IDIG_LJY_001:invoke-aaaaaa:1.0
+  monitoring:
+    $ref: RP_IDIG_LJY_001:telemetry-aaaaaa:1.0
