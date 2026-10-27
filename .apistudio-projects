@@ -3,12 +3,12 @@ projects:
     id: 3Rs0LGef
     description: ''
     tags: []
-    lastUpdated: 1792135777188
+    lastUpdated: 1792994651997
   ICHAIN_MCP01:
     id: CzDA78bH
     description: ''
     tags: []
-    lastUpdated: 1792388258821
+    lastUpdated: 1792994835581
   ICHAIN_LLM01:
     id: WKh8jh4R
     description: ''
@@ -18,9 +18,14 @@ projects:
     id: Pkbjfjst
     description: ''
     tags: []
-    lastUpdated: 1792389150719
+    lastUpdated: 1792997822458
   test_ix_mcp:
     id: xGsGxrlk
     description: ''
     tags: []
     lastUpdated: 1792988582099
+  market_mcp01:
+    id: LtO8RMcH
+    description: ''
+    tags: []
+    lastUpdated: 1793065504382
