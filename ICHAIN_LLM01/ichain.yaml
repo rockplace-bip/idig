@@ -1,0 +1,33 @@
+kind: LLMProvider
+apiVersion: api.ibm.com/v1
+metadata:
+  name: ichain
+  namespace: ICHAIN_LLM01
+  version: "1.0"
+  tags: []
+  labels:
+    gatewayTypes:
+      - nano
+  domain: ai-platform
+spec:
+  provider:
+    type: custom
+    operations:
+      - InvokeOpenAiModels
+      - InvokeOpenAiModelsId
+      - InvokeOpenAiChatCompletions
+      - InvokeOpenAiEmbeddings
+    apiKeySecret: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI0Y2UyMDNkNS0xY2Y0LTQ4NWQtYWRlMi0xZjcwZjc2ZWE2NmUiLCJqdGkiOiI3ODdmNDg5YS0zNTgzLTQ2NzMtYmFiZC1jN2QyODllMDQ3MDUiLCJ0b2tlbl91c2UiOiJhcGkiLCJpYXQiOjE3OTIwNDY0OTEsImlzcyI6Im1jcGdhdGV3YXkiLCJhdWQiOiJtY3BnYXRld2F5LWFwaSIsInVzZXIiOnsiZW1haWwiOiJhZG1pbkBleGFtcGxlLmNvbSIsImZ1bGxfbmFtZSI6IkFQSSBUb2tlbiBVc2VyIiwiaXNfYWRtaW4iOnRydWUsImF1dGhfcHJvdmlkZXIiOiJhcGlfdG9rZW4ifSwidGVhbXMiOm51bGwsInNjb3BlcyI6eyJzZXJ2ZXJfaWQiOm51bGwsInBlcm1pc3Npb25zIjpbXSwiaXBfcmVzdHJpY3Rpb25zIjpbXSwidGltZV9yZXN0cmljdGlvbnMiOnt9fSwiZXhwIjoxNzk0NjM4NDkxfQ.avsWefNY3w85bpCf-gFh2XHKjnizoBr-PI0GlVu1TKs
+    tlsClientProfile: sample-tls-client-profile:1.0.0
+    inputMessage: request
+    cachePolicy:
+      cache:
+        expire:
+          static:
+            seconds: 60
+        scope:
+          narrowScope: {}
+        ignoreControlDirectives: true
+    providerUrl: https://contextforge.apps.rosa.rp-bip-apic-dev.gxbr.p3.openshiftapps.com/servers/62f85d933a6b4870b304b3132751fa9f/mcp
+  product:
+    $ref: ICHAIN_LLM01:product-ichain-7wgkh:1.0

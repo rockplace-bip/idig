@@ -1,0 +1,16 @@
+kind: FreeFlowPolicySequence
+apiVersion: api.ibm.com/v1
+metadata:
+  name: market_mcp01-freeflowpolicysequence-i8yd3
+  namespace: market_mcp01
+  version: "1.0"
+  tags: []
+  domain: mcp
+  labels:
+    gatewayTypes:
+      - nano
+spec:
+  main:
+    - $ref: market_mcp01:invoke-i8yd3:1.0
+  monitoring:
+    $ref: market_mcp01:telemetry-i8yd3:1.0

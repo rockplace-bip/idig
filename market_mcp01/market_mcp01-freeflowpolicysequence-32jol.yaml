@@ -1,0 +1,16 @@
+kind: FreeFlowPolicySequence
+apiVersion: api.ibm.com/v1
+metadata:
+  name: market_mcp01-freeflowpolicysequence-32jol
+  namespace: market_mcp01
+  version: "1.0"
+  tags: []
+  domain: mcp
+  labels:
+    gatewayTypes:
+      - nano
+spec:
+  main:
+    - $ref: market_mcp01:invoke-32jol:1.0
+  monitoring:
+    $ref: market_mcp01:telemetry-32jol:1.0

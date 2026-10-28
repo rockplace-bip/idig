@@ -1,0 +1,64 @@
+openapi: 3.0.1
+info:
+  title: market_users
+  version: "1.0"
+paths:
+  /market/getUsers:
+    get:
+      operationId: marketgetUsers_GET_1
+      parameters: []
+      responses:
+        "200":
+          description: OK
+        "401":
+          description: Access Denied
+    parameters: []
+  /market/setUser:
+    post:
+      operationId: marketsetUser_POST_2
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/input"
+        required: true
+      responses:
+        "200":
+          description: OK
+        "401":
+          description: Access Denied
+    parameters: []
+components:
+  schemas:
+    input:
+      required:
+        - city
+        - country
+        - department
+        - description
+        - email
+        - name
+        - phone
+        - status
+        - user_id
+      type: object
+      properties:
+        country:
+          type: string
+        user_id:
+          type: string
+        phone:
+          type: string
+        city:
+          type: string
+        name:
+          type: string
+        description:
+          type: string
+        department:
+          type: string
+        email:
+          type: string
+        status:
+          type: string

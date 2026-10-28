@@ -1,0 +1,20 @@
+kind: MCPServer
+apiVersion: api.ibm.com/v1
+metadata:
+  name: market_getusers-server-i8yd3
+  namespace: market_mcp01
+  version: "1.0"
+  tags: []
+  domain: mcp
+  labels:
+    origin: mcp-rest
+spec:
+  title: market_getUsers MCP Server
+  protocolVersion: V2025_11_25
+  quota:
+    $ref: market_mcp01:market_mcp01-quota-i8yd3:1.0
+  policy-sequence:
+    - $ref: market_mcp01:market_mcp01-freeflowpolicysequence-i8yd3:1.0
+  capabilities:
+    tools:
+      - $ref: market_mcp01:market_getusers-tool-i8yd3:1.0

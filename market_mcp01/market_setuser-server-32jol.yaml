@@ -1,0 +1,20 @@
+kind: MCPServer
+apiVersion: api.ibm.com/v1
+metadata:
+  name: market_setuser-server-32jol
+  namespace: market_mcp01
+  version: "1.0"
+  tags: []
+  domain: mcp
+  labels:
+    origin: mcp-rest
+spec:
+  title: market_setUser MCP Server
+  protocolVersion: V2025_11_25
+  quota:
+    $ref: market_mcp01:market_mcp01-quota-32jol:1.0
+  policy-sequence:
+    - $ref: market_mcp01:market_mcp01-freeflowpolicysequence-32jol:1.0
+  capabilities:
+    tools:
+      - $ref: market_mcp01:market_setuser-tool-32jol:1.0

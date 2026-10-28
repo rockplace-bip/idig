@@ -1,0 +1,17 @@
+kind: Set
+apiVersion: api.ibm.com/v1
+metadata:
+  name: Set-aDzvn
+  namespace: market_mcp01
+  version: '1.0'
+  tags: []
+  labels:
+    gatewayTypes:
+      - nano
+spec:
+  messageHeader:
+    action: add
+    headerName: x-Gateway-APIKey
+    value: a7d35b1f-586d-49f8-8fea-7fcf041cef6e
+    messageName: request
+  valueType: plain

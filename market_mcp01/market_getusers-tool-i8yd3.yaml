@@ -1,0 +1,22 @@
+kind: MCPTools
+apiVersion: api.ibm.com/v1
+metadata:
+  name: market_getusers-tool-i8yd3
+  namespace: market_mcp01
+  version: "1.0"
+  tags: []
+  domain: mcp
+  labels:
+    api-spec: ./market_getusers-spec.yml
+spec:
+  tools:
+    - name: get_getUsers
+      description: Make a GET request to /market/getUsers
+      inputSchema:
+        type: object
+        properties: {}
+      x-api-binding:
+        operationPath: /market/getUsers
+        operationMethod: GET
+        api:
+          $path: ./market_getusers-spec.yml

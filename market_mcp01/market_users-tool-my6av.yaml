@@ -1,0 +1,60 @@
+kind: MCPTools
+apiVersion: api.ibm.com/v1
+metadata:
+  name: market_users-tool-my6av
+  namespace: market_mcp01
+  version: "1.0"
+  tags: []
+  domain: mcp
+  labels:
+    api-spec: ./market_users-spec.yml
+spec:
+  tools:
+    - name: marketgetUsers_GET_1
+      description: Make a GET request to /market/getUsers
+      inputSchema:
+        type: object
+        properties: {}
+      x-api-binding:
+        operationPath: /market/getUsers
+        operationMethod: GET
+        api:
+          $path: ./market_users-spec.yml
+    - name: marketsetUser_POST_2
+      description: Make a POST request to /market/setUser
+      inputSchema:
+        type: object
+        properties:
+          country:
+            type: string
+          user_id:
+            type: string
+          phone:
+            type: string
+          city:
+            type: string
+          name:
+            type: string
+          description:
+            type: string
+          department:
+            type: string
+          email:
+            type: string
+          status:
+            type: string
+        required:
+          - country
+          - user_id
+          - phone
+          - city
+          - name
+          - description
+          - department
+          - email
+          - status
+      x-api-binding:
+        operationPath: /market/setUser
+        operationMethod: POST
+        api:
+          $path: ./market_users-spec.yml

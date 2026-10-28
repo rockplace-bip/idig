@@ -1,0 +1,22 @@
+kind: MCPTools
+apiVersion: api.ibm.com/v1
+metadata:
+  name: market_setuser-tool-01kw6
+  namespace: market_mcp01
+  version: "1.0"
+  tags: []
+  domain: mcp
+  labels:
+    api-spec: ./market_setuser-spec.yml
+spec:
+  tools:
+    - name: post_setUser
+      description: Make a POST request to /market/setUser
+      inputSchema:
+        type: object
+        properties: {}
+      x-api-binding:
+        operationPath: /market/setUser
+        operationMethod: POST
+        api:
+          $path: ./market_setuser-spec.yml

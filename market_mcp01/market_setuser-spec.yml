@@ -1,0 +1,24 @@
+openapi: 3.0.1
+info:
+  title: market_setUser
+  version: "1.0"
+servers:
+  - url: https://wmapigw-gw-apic.apps.rosa.rp-bip-apic-dev.gxbr.p3.openshiftapps.com/gateway/market_setUser/1.0
+paths:
+  /market/setUser:
+    summary: /market/setUser
+    post:
+      parameters: []
+      requestBody:
+        content: {}
+      responses: {}
+    parameters: []
+components:
+  schemas: {}
+  responses: {}
+  parameters: {}
+  examples: {}
+  requestBodies: {}
+  headers: {}
+  links: {}
+  callbacks: {}
