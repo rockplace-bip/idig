@@ -3,7 +3,7 @@ projects:
     id: 3Rs0LGef
     description: ''
     tags: []
-    lastUpdated: 1792135777188
+    lastUpdated: 1793165522547
   ICHAIN_MCP01:
     id: CzDA78bH
     description: ''
@@ -23,4 +23,9 @@ projects:
     id: HeHkGF4U
     description: ''
     tags: []
-    lastUpdated: 1792398993130
+    lastUpdated: 1793165556144
+  RP_IDIG_LJY_002:
+    id: Hr8lpdRG
+    description: open-meteo
+    tags: []
+    lastUpdated: 1793168896676
