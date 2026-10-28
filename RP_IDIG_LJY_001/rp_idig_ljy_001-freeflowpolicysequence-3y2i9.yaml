@@ -11,7 +11,6 @@ metadata:
   domain: mcp
 spec:
   main:
-    - $ref: RP_IDIG_LJY_001:invoke-3y2i9:1.0
-    - $ref: RP_IDIG_LJY_001:Invoke-cDYVv:1.0
+    - $ref: RP_IDIG_LJY_001:Invoke-t0JYs:1.0
   monitoring:
     $ref: RP_IDIG_LJY_001:telemetry-3y2i9:1.0
