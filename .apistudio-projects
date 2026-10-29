@@ -19,13 +19,8 @@ projects:
     description: ''
     tags: []
     lastUpdated: 1792388210611
-  RP_IDIG_LJY_001:
-    id: HeHkGF4U
-    description: ''
-    tags: []
-    lastUpdated: 1793165556144
   RP_IDIG_LJY_002:
     id: nvfh89c2
     description: open-meteo
     tags: []
-    lastUpdated: 1793169252413
+    lastUpdated: 1793249025721
