@@ -1,0 +1,56 @@
+kind: MCPTools
+apiVersion: api.ibm.com/v1
+metadata:
+  name: open-meteo-weather-forecast-api-mcp-test-tool-6t69r
+  namespace: RP_IDIG_LJY_002
+  version: '1.1'
+  tags: []
+  description: >-
+    Simplified OpenAPI 3.0.3 definition for testing the Open-Meteo public
+    forecast API through API Studio / MCP. This is an independently prepared
+    test definition, not the original official specification.
+  labels:
+    api-spec: ./open-meteo-weather-forecast-api-mcp-test--spec.yml
+  domain: mcp
+spec:
+  tools:
+    - name: getForecast
+      description: >-
+        Returns weather data for a supplied latitude and longitude. Pass
+        current=temperature_2m to request current air temperature.
+      inputSchema:
+        type: object
+        properties:
+          latitude:
+            description: Latitude of the requested location (WGS84).
+            x-parameter-location: query
+            type: string
+            example: '37.5665'
+          longitude:
+            description: Longitude of the requested location (WGS84).
+            x-parameter-location: query
+            type: string
+            example: '126.9780'
+          current:
+            description: >-
+              Comma-separated current weather variables, e.g. temperature_2m or
+              temperature_2m,relative_humidity_2m.
+            x-parameter-location: query
+            type: string
+            example: temperature_2m
+          timezone:
+            description: Time zone used to format returned timestamps.
+            x-parameter-location: query
+            type: string
+            example: Asia/Seoul
+        required:
+          - latitude
+          - longitude
+          - current
+          - timezone
+      title: Get current weather for a location
+      x-api-binding:
+        operationPath: /v1/forecast
+        operationMethod: GET
+        api:
+          $path: ./open-meteo-weather-forecast-api-mcp-test--spec.yml

@@ -1,0 +1,23 @@
+kind: Invoke
+apiVersion: api.ibm.com/v1
+metadata:
+  name: invoke-6t69r
+  namespace: RP_IDIG_LJY_002
+  version: '1.1'
+  tags: []
+  labels:
+    gatewayTypes:
+      - nano
+  domain: mcp
+spec:
+  endpoint:
+    http:
+      target:
+        tlsClientProfile: sample-tls-client-profile:1.0.0
+        url: '''https://api.open-meteo.com'' & $pathAndQuery()'
+        urlType: jsonata
+        persistentConnections: false
+        timeout: 30
+        decompressResponse: true
+        followRedirects: false
+        chunkedUpload: false

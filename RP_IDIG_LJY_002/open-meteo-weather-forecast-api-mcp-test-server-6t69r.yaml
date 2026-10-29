@@ -1,0 +1,20 @@
+kind: MCPServer
+apiVersion: api.ibm.com/v1
+metadata:
+  name: open-meteo-weather-forecast-api-mcp-test-server-6t69r
+  namespace: RP_IDIG_LJY_002
+  version: '1.1'
+  tags: []
+  labels:
+    origin: mcp-rest
+spec:
+  title: Open-Meteo Weather Forecast API (MCP Test) MCP Server
+  protocolVersion: V2025_11_25
+  quota:
+    $ref: RP_IDIG_LJY_002:rp_idig_ljy_002-quota-6t69r:1.1
+  policy-sequence:
+    - $ref: RP_IDIG_LJY_002:rp_idig_ljy_002-freeflowpolicysequence-6t69r:1.1
+  capabilities:
+    tools:
+      - $ref: >-
+          RP_IDIG_LJY_002:open-meteo-weather-forecast-api-mcp-test-tool-6t69r:1.1

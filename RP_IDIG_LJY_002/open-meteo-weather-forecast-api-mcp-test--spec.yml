@@ -1,0 +1,89 @@
+openapi: 3.0.3
+info:
+  title: Open-Meteo Weather Forecast API (MCP Test)
+  description: >-
+    Simplified OpenAPI 3.0.3 definition for testing the Open-Meteo public
+    forecast API through API Studio / MCP. This is an independently prepared
+    test definition, not the original official specification.
+  version: 1.0.0
+servers:
+  - url: https://api.open-meteo.com
+    description: Open-Meteo public API
+paths:
+  /v1/forecast:
+    get:
+      tags:
+        - Weather
+      summary: Get current weather for a location
+      description: >-
+        Returns weather data for a supplied latitude and longitude. Pass
+        current=temperature_2m to request current air temperature.
+      operationId: getForecast
+      parameters:
+        - name: latitude
+          in: query
+          required: true
+          description: Latitude of the requested location (WGS84).
+          schema:
+            type: string
+            example: '37.5665'
+        - name: longitude
+          in: query
+          required: true
+          description: Longitude of the requested location (WGS84).
+          schema:
+            type: string
+            example: '126.9780'
+        - name: current
+          in: query
+          required: true
+          description: >-
+            Comma-separated current weather variables, e.g. temperature_2m or
+            temperature_2m,relative_humidity_2m.
+          schema:
+            type: string
+            example: temperature_2m
+        - name: timezone
+          in: query
+          required: true
+          description: Time zone used to format returned timestamps.
+          schema:
+            type: string
+            example: Asia/Seoul
+      responses:
+        '200':
+          description: Weather forecast response
+          content:
+            application/json:
+              schema:
+                type: object
+                additionalProperties: true
+                properties:
+                  latitude:
+                    type: number
+                  longitude:
+                    type: number
+                  timezone:
+                    type: string
+                  current_units:
+                    type: object
+                    additionalProperties: true
+                  current:
+                    type: object
+                    additionalProperties: true
+                    properties:
+                      time:
+                        type: string
+                      interval:
+                        type: integer
+                      temperature_2m:
+                        type: number
+                      relative_humidity_2m:
+                        type: integer
+        '400':
+          description: Invalid or missing query parameters
+          content:
+            application/json:
+              schema:
+                type: object
+                additionalProperties: true

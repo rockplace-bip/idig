@@ -1,0 +1,25 @@
+kind: Set
+apiVersion: api.ibm.com/v1
+metadata:
+  name: Set-O1qwQ
+  namespace: RP_IDIG_LJY_002
+  version: '1.0'
+  tags: []
+  labels:
+    gatewayTypes:
+      - nano
+spec:
+  valueType: jsonata
+  messageUri:
+    messageName: request
+    nameType: plain
+    path: '''/v1/forecast'''
+    queryParams:
+      - name: latitude
+        value: $string($body('request').latitude)
+      - name: longitude
+        value: "\t$string($body('request').longitude)"
+      - name: current
+        value: $string($body('request').current)
+      - name: timezone
+        value: $string($body('request').timezone)

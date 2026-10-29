@@ -1,0 +1,17 @@
+kind: Set
+apiVersion: api.ibm.com/v1
+metadata:
+  name: Set-BCGy9
+  namespace: RP_IDIG_LJY_002
+  version: '1.0'
+  tags: []
+  labels:
+    gatewayTypes:
+      - nano
+spec:
+  messageHeader:
+    action: set
+    headerName: ''
+    value: ''
+    messageName: ''
+  valueType: plain
