@@ -42,14 +42,9 @@
       "projectId": "R3SdmgEg",
       "filePath": "market_mcp02/market_mcp02-freeflowpolicysequence-u1z7f.yaml",
       "docIndex": 0,
-      "assetType": "resource",
-      "lastIndexed": 1793257623613,
-      "schemaVersion": 1,
-      "kind": "FreeFlowPolicySequence",
-      "name": "market_mcp02-freeflowpolicysequence-u1z7f",
-      "namespace": "market_mcp02",
-      "version": "1.0",
-      "contentHash": "968c037d5b2d586b"
+      "assetType": "support",
+      "lastIndexed": 1793261784358,
+      "schemaVersion": 1
     },
     {
       "id": "38951675-c41d-4a05-b979-caf3b0d46a7a:0",
@@ -247,6 +242,20 @@
       "contentHash": "de12bed1465cf245"
     },
     {
+      "id": "a9ef94fd-2eac-4796-80a5-7661f4797e17:0",
+      "projectId": "R3SdmgEg",
+      "filePath": "market_mcp02/Set-Iigeo.yml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1793261646724,
+      "schemaVersion": 1,
+      "kind": "Set",
+      "name": "Set-Iigeo",
+      "namespace": "market_mcp02",
+      "version": "1.0",
+      "contentHash": "3153a754caf1302e"
+    },
+    {
       "id": "b7f80513-ebb9-4d9b-be5a-acfe61fbbaaf:0",
       "projectId": "R3SdmgEg",
       "filePath": "market_mcp02/market_mcp02-quota-m4dyc.yaml",
@@ -294,7 +303,7 @@
       "filePath": "market_mcp02/invoke-u1z7f.yaml",
       "docIndex": 0,
       "assetType": "resource",
-      "lastIndexed": 1793258814522,
+      "lastIndexed": 1793261827057,
       "schemaVersion": 1,
       "kind": "Invoke",
       "name": "invoke-u1z7f",
@@ -354,13 +363,14 @@
       "id": "3b42d57c-903b-49be-8094-da6a0349941d",
       "projectId": "R3SdmgEg",
       "sourceNodeId": "b9de5a7b-3d69-4812-8601-b75a9a7ea16f:0",
-      "targetNodeId": "25c9e8c0-2ad7-4bef-ae8a-45b82a2c79a5:0",
+      "targetNodeId": null,
       "targetRefType": "same-project",
       "targetRefString": "market_mcp02:market_mcp02-freeflowpolicysequence-u1z7f:1.0",
       "targetRefKind": "resource",
-      "isValid": true,
+      "isValid": false,
       "createdAt": 1793255313598,
-      "lastValidated": 1793257623627
+      "lastValidated": 1793261784359,
+      "invalidReason": "Target node data changed; edge pending re-resolution"
     },
     {
       "id": "591c01d2-f130-4e47-ab36-14c92203036e",
@@ -397,30 +407,6 @@
       "isValid": true,
       "createdAt": 1793255313673,
       "lastValidated": 1793255313673
-    },
-    {
-      "id": "cbd99423-c81c-498b-b7da-48dedad132aa",
-      "projectId": "R3SdmgEg",
-      "sourceNodeId": "25c9e8c0-2ad7-4bef-ae8a-45b82a2c79a5:0",
-      "targetNodeId": "f4051175-2646-41c5-9fb7-741d4ff0cd19:0",
-      "targetRefType": "same-project",
-      "targetRefString": "market_mcp02:telemetry-u1z7f:1.0",
-      "targetRefKind": "resource",
-      "isValid": true,
-      "createdAt": 1793255313674,
-      "lastValidated": 1793255313778
-    },
-    {
-      "id": "fe749adb-a8f2-42ab-9236-0cd22fc5f048",
-      "projectId": "R3SdmgEg",
-      "sourceNodeId": "25c9e8c0-2ad7-4bef-ae8a-45b82a2c79a5:0",
-      "targetNodeId": "ce85c75c-2b2d-41f1-becc-99ec8c585253:0",
-      "targetRefType": "same-project",
-      "targetRefString": "market_mcp02:invoke-u1z7f:1.0",
-      "targetRefKind": "resource",
-      "isValid": true,
-      "createdAt": 1793255313674,
-      "lastValidated": 1793258814529
     },
     {
       "id": "ffda5cf5-1c37-4039-8338-8a67d34ecb47",

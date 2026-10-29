@@ -11,6 +11,7 @@ metadata:
   domain: mcp
 spec:
   main:
-    - $ref: market_mcp02:invoke-u1z7f:1.0
+    - $ref: market_mcp02:Set-Iigeo:1.0
+    - $ref: ::
   monitoring:
     $ref: market_mcp02:telemetry-u1z7f:1.0
