@@ -1,0 +1,25 @@
+kind: Invoke
+apiVersion: api.ibm.com/v1
+metadata:
+  name: invoke-m4dyc
+  namespace: market_mcp02
+  version: '1.0'
+  tags: []
+  labels:
+    gatewayTypes:
+      - nano
+  domain: mcp
+spec:
+  endpoint:
+    http:
+      target:
+        tlsClientProfile: ''
+        url: >-
+          'https://wmapigw-gw-apic.apps.rosa.rp-bip-apic-dev.gxbr.p3.openshiftapps.com/gateway/idig_maket/1.0'
+          & $pathAndQuery()
+        urlType: jsonata
+        persistentConnections: false
+        timeout: 30
+        decompressResponse: true
+        followRedirects: false
+        chunkedUpload: false

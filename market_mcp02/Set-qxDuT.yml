@@ -1,0 +1,17 @@
+kind: Set
+apiVersion: api.ibm.com/v1
+metadata:
+  name: Set-qxDuT
+  namespace: market_mcp02
+  version: '1.0'
+  tags: []
+  labels:
+    gatewayTypes:
+      - nano
+spec:
+  messageHeader:
+    action: add
+    headerName: accept
+    value: text/event-stream
+    messageName: request
+  valueType: plain

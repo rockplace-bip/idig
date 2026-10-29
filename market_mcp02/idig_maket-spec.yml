@@ -1,0 +1,145 @@
+openapi: 3.0.1
+info:
+  title: idig_maket
+  version: "1.0"
+security:
+  - apiKey: []
+paths:
+  /market/getUsers:
+    summary: /market/getUsers
+    get:
+      operationId: marketgetUsers_GET_1
+      parameters: []
+      responses:
+        "200":
+          description: OK
+          headers: {}
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/marketgetUsers_GET_response"
+              examples: {}
+          links: {}
+        "401":
+          description: Access Denied
+          headers: {}
+          content: {}
+          links: {}
+    parameters: []
+  /market/setUser:
+    summary: /market/setUser
+    post:
+      operationId: marketsetUser_POST_2
+      parameters: []
+      requestBody:
+        content:
+          application/x-www-form-urlencoded:
+            schema:
+              type: object
+              properties:
+                city:
+                  type: string
+                  readOnly: false
+                country:
+                  type: string
+                  readOnly: false
+                department:
+                  type: string
+                  readOnly: false
+                description:
+                  type: string
+                  readOnly: false
+                email:
+                  type: string
+                  readOnly: false
+                id:
+                  type: string
+                  readOnly: false
+                name:
+                  type: string
+                  readOnly: false
+                phone:
+                  type: string
+                  readOnly: false
+                status:
+                  type: string
+                  readOnly: false
+            examples: {}
+        required: true
+      responses:
+        "200":
+          description: OK
+          headers: {}
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/marketsetUser_POST_response"
+              examples: {}
+          links: {}
+        "401":
+          description: Access Denied
+          headers: {}
+          content: {}
+          links: {}
+    parameters: []
+components:
+  schemas:
+    marketgetUsers_GET_response:
+      required:
+        - results
+      type: object
+      properties:
+        results:
+          type: array
+          items:
+            $ref: "#/components/schemas/results"
+    marketsetUser_POST_response:
+      required:
+        - status
+      type: object
+      properties:
+        status:
+          type: string
+    results:
+      required:
+        - city
+        - country
+        - department
+        - description
+        - email
+        - name
+        - phone
+        - status
+        - user_id
+      type: object
+      properties:
+        city:
+          type: string
+        country:
+          type: string
+        department:
+          type: string
+        description:
+          type: string
+        email:
+          type: string
+        name:
+          type: string
+        phone:
+          type: string
+        status:
+          type: string
+        user_id:
+          type: string
+  responses: {}
+  parameters: {}
+  examples: {}
+  requestBodies: {}
+  headers: {}
+  securitySchemes:
+    apiKey:
+      type: apiKey
+      name: x-Gateway-APIKey
+      in: header
+  links: {}
+  callbacks: {}

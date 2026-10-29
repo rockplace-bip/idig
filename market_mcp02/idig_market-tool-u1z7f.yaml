@@ -1,0 +1,59 @@
+kind: MCPTools
+apiVersion: api.ibm.com/v1
+metadata:
+  name: idig_market-tool-u1z7f
+  namespace: market_mcp02
+  version: "1.0"
+  tags: []
+  domain: mcp
+  labels:
+    api-spec: ./idig_market-spec.yml
+spec:
+  tools:
+    - name: marketgetUsers_GET
+      description: select User
+      inputSchema:
+        type: object
+        properties: {}
+      x-api-binding:
+        operationPath: /market/getUsers
+        operationMethod: GET
+        api:
+          $path: ./idig_market-spec.yml
+    - name: marketsetUser_POST
+      description: Add User
+      inputSchema:
+        type: object
+        properties:
+          city:
+            type: string
+            readOnly: false
+          country:
+            type: string
+            readOnly: false
+          department:
+            type: string
+            readOnly: false
+          description:
+            type: string
+            readOnly: false
+          email:
+            type: string
+            readOnly: false
+          id:
+            type: string
+            readOnly: false
+          name:
+            type: string
+            readOnly: false
+          phone:
+            type: string
+            readOnly: false
+          status:
+            type: string
+            readOnly: false
+      x-api-binding:
+        operationPath: /market/setUser
+        operationMethod: POST
+        api:
+          $path: ./idig_market-spec.yml

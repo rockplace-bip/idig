@@ -1,0 +1,25 @@
+kind: Invoke
+apiVersion: api.ibm.com/v1
+metadata:
+  name: invoke-dmx4d
+  namespace: market_mcp02
+  version: '1.0'
+  tags: []
+  labels:
+    gatewayTypes:
+      - nano
+  domain: mcp
+spec:
+  endpoint:
+    http:
+      target:
+        tlsClientProfile: sample-tls-client-profile:1.0.0
+        url: >-
+          'http://wmapigw-gw-apic.apps.rosa.rp-bip-apic-dev.gxbr.p3.openshiftapps.com/gateway/IDIG_MARKET/1.0'
+          & $pathAndQuery()
+        urlType: jsonata
+        persistentConnections: false
+        timeout: 30
+        decompressResponse: true
+        followRedirects: false
+        chunkedUpload: false
