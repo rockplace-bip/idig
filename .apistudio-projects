@@ -3,7 +3,7 @@ projects:
     id: 3Rs0LGef
     description: ''
     tags: []
-    lastUpdated: 1792994651997
+    lastUpdated: 1793073509723
   ICHAIN_MCP01:
     id: CzDA78bH
     description: ''
@@ -13,12 +13,12 @@ projects:
     id: WKh8jh4R
     description: ''
     tags: []
-    lastUpdated: 1792387949784
+    lastUpdated: 1793154195179
   ICHAIN_MCP02:
     id: Pkbjfjst
     description: ''
     tags: []
-    lastUpdated: 1792997822458
+    lastUpdated: 1793178150255
   test_ix_mcp:
     id: xGsGxrlk
     description: ''
@@ -28,4 +28,9 @@ projects:
     id: LtO8RMcH
     description: ''
     tags: []
-    lastUpdated: 1793065504382
+    lastUpdated: 1793176939449
+  market_mcp02:
+    id: R3SdmgEg
+    description: ''
+    tags: []
+    lastUpdated: 1793234549638
