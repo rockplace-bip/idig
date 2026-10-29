@@ -6,13 +6,13 @@
       "filePath": "market_mcp02/invoke-y4w64.yaml",
       "docIndex": 0,
       "assetType": "resource",
-      "lastIndexed": 1793255313663,
+      "lastIndexed": 1793257600663,
       "schemaVersion": 1,
       "kind": "Invoke",
       "name": "invoke-y4w64",
       "namespace": "market_mcp02",
       "version": "1.0",
-      "contentHash": "d73be737490031ae"
+      "contentHash": "11167bd4e78d68b8"
     },
     {
       "id": "1bc746ce-84d7-494e-a379-8723ce956352:0",
@@ -20,13 +20,13 @@
       "filePath": "market_mcp02/market_mcp02-quota-h43aq.yaml",
       "docIndex": 0,
       "assetType": "resource",
-      "lastIndexed": 1793255313665,
+      "lastIndexed": 1793257600664,
       "schemaVersion": 1,
       "kind": "Quota",
       "name": "market_mcp02-quota-h43aq",
       "namespace": "market_mcp02",
       "version": "1.0",
-      "contentHash": "9df15d8b763b1c78"
+      "contentHash": "c915e8c21891063b"
     },
     {
       "id": "1c551119-0180-4405-9d1a-988ff9e8aa90:0",
@@ -43,13 +43,13 @@
       "filePath": "market_mcp02/market_mcp02-freeflowpolicysequence-u1z7f.yaml",
       "docIndex": 0,
       "assetType": "resource",
-      "lastIndexed": 1793255313664,
+      "lastIndexed": 1793257623613,
       "schemaVersion": 1,
       "kind": "FreeFlowPolicySequence",
       "name": "market_mcp02-freeflowpolicysequence-u1z7f",
       "namespace": "market_mcp02",
       "version": "1.0",
-      "contentHash": "75592c9a30a99f7c"
+      "contentHash": "968c037d5b2d586b"
     },
     {
       "id": "38951675-c41d-4a05-b979-caf3b0d46a7a:0",
@@ -57,13 +57,13 @@
       "filePath": "market_mcp02/market_mcp02-quota-u1z7f.yaml",
       "docIndex": 0,
       "assetType": "resource",
-      "lastIndexed": 1793255313760,
+      "lastIndexed": 1793257600670,
       "schemaVersion": 1,
       "kind": "Quota",
       "name": "market_mcp02-quota-u1z7f",
       "namespace": "market_mcp02",
       "version": "1.0",
-      "contentHash": "1fb60f399dded2b0"
+      "contentHash": "c74931eb438b19bc"
     },
     {
       "id": "3ba1a5c3-5a04-426a-8937-3086c9fcb23b:0",
@@ -71,13 +71,13 @@
       "filePath": "market_mcp02/telemetry-h43aq.yaml",
       "docIndex": 0,
       "assetType": "resource",
-      "lastIndexed": 1793255313762,
+      "lastIndexed": 1793257600672,
       "schemaVersion": 1,
       "kind": "Telemetry",
       "name": "telemetry-h43aq",
       "namespace": "market_mcp02",
       "version": "1.0",
-      "contentHash": "9b8aece9ef0982f6"
+      "contentHash": "15b3cd0c1e1f3a22"
     },
     {
       "id": "3c17b13c-6aa8-4aec-876a-b723bfde9b0c:0",
@@ -85,13 +85,13 @@
       "filePath": "market_mcp02/telemetry-dmx4d.yaml",
       "docIndex": 0,
       "assetType": "resource",
-      "lastIndexed": 1793255313761,
+      "lastIndexed": 1793257600672,
       "schemaVersion": 1,
       "kind": "Telemetry",
       "name": "telemetry-dmx4d",
       "namespace": "market_mcp02",
       "version": "1.0",
-      "contentHash": "9c453e8d5214da8b"
+      "contentHash": "b769e8efedc5261e"
     },
     {
       "id": "416ded8e-06de-4166-9a4f-f5856e63a4a3:0",
@@ -117,13 +117,13 @@
       "filePath": "market_mcp02/invoke-h43aq.yaml",
       "docIndex": 0,
       "assetType": "resource",
-      "lastIndexed": 1793255313662,
+      "lastIndexed": 1793257600663,
       "schemaVersion": 1,
       "kind": "Invoke",
       "name": "invoke-h43aq",
       "namespace": "market_mcp02",
       "version": "1.0",
-      "contentHash": "2294c932e20a6853"
+      "contentHash": "ed05c9657268f2b7"
     },
     {
       "id": "53a3717d-12e6-401c-bb32-bc76fab66569:0",
@@ -131,13 +131,13 @@
       "filePath": "market_mcp02/telemetry-m4dyc.yaml",
       "docIndex": 0,
       "assetType": "resource",
-      "lastIndexed": 1793255313762,
+      "lastIndexed": 1793257600672,
       "schemaVersion": 1,
       "kind": "Telemetry",
       "name": "telemetry-m4dyc",
       "namespace": "market_mcp02",
       "version": "1.0",
-      "contentHash": "d72825b809f8bf5e"
+      "contentHash": "7d3a614ddc8da7ec"
     },
     {
       "id": "66616618-879e-4eb1-9397-4c0c97e96932:0",
@@ -145,13 +145,13 @@
       "filePath": "market_mcp02/telemetry-y4w64.yaml",
       "docIndex": 0,
       "assetType": "resource",
-      "lastIndexed": 1793255313763,
+      "lastIndexed": 1793257600673,
       "schemaVersion": 1,
       "kind": "Telemetry",
       "name": "telemetry-y4w64",
       "namespace": "market_mcp02",
       "version": "1.0",
-      "contentHash": "73d1bb05a0af51bb"
+      "contentHash": "e5f9c7a1bf227f57"
     },
     {
       "id": "66f6d5a7-90da-46c9-b7be-cc9be6a9e7e3:0",
@@ -201,13 +201,13 @@
       "filePath": "market_mcp02/idig_market-tool-u1z7f.yaml",
       "docIndex": 0,
       "assetType": "resource",
-      "lastIndexed": 1793255313659,
+      "lastIndexed": 1793257600662,
       "schemaVersion": 1,
       "kind": "MCPTools",
       "name": "idig_market-tool-u1z7f",
       "namespace": "market_mcp02",
       "version": "1.0",
-      "contentHash": "52d66ce03270d1e8"
+      "contentHash": "b479b2d6b0ae90d0"
     },
     {
       "id": "8114b759-a3e5-4116-97ca-46b3c2b330a5:0",
@@ -215,13 +215,13 @@
       "filePath": "market_mcp02/idig_market-tool-dmx4d.yaml",
       "docIndex": 0,
       "assetType": "resource",
-      "lastIndexed": 1793255313658,
+      "lastIndexed": 1793257600662,
       "schemaVersion": 1,
       "kind": "MCPTools",
       "name": "idig_market-tool-dmx4d",
       "namespace": "market_mcp02",
       "version": "1.0",
-      "contentHash": "440dec0f2506d287"
+      "contentHash": "422fc873a1928c56"
     },
     {
       "id": "9bb20255-bdd4-4972-aa0f-b1338217350c:0",
@@ -238,13 +238,13 @@
       "filePath": "market_mcp02/market_mcp02-quota-dmx4d.yaml",
       "docIndex": 0,
       "assetType": "resource",
-      "lastIndexed": 1793255313664,
+      "lastIndexed": 1793257600664,
       "schemaVersion": 1,
       "kind": "Quota",
       "name": "market_mcp02-quota-dmx4d",
       "namespace": "market_mcp02",
       "version": "1.0",
-      "contentHash": "cc41f5f5f629e586"
+      "contentHash": "de12bed1465cf245"
     },
     {
       "id": "b7f80513-ebb9-4d9b-be5a-acfe61fbbaaf:0",
@@ -252,13 +252,13 @@
       "filePath": "market_mcp02/market_mcp02-quota-m4dyc.yaml",
       "docIndex": 0,
       "assetType": "resource",
-      "lastIndexed": 1793255313759,
+      "lastIndexed": 1793257600670,
       "schemaVersion": 1,
       "kind": "Quota",
       "name": "market_mcp02-quota-m4dyc",
       "namespace": "market_mcp02",
       "version": "1.0",
-      "contentHash": "becfcac9af9f148d"
+      "contentHash": "8bfcaedf8d09bf26"
     },
     {
       "id": "b9de5a7b-3d69-4812-8601-b75a9a7ea16f:0",
@@ -266,13 +266,13 @@
       "filePath": "market_mcp02/idig_market-server-u1z7f.yaml",
       "docIndex": 0,
       "assetType": "resource",
-      "lastIndexed": 1793255313587,
+      "lastIndexed": 1793257600656,
       "schemaVersion": 1,
       "kind": "MCPServer",
       "name": "idig_market-server-u1z7f",
       "namespace": "market_mcp02",
       "version": "1.0",
-      "contentHash": "195dd16aea14b0b7"
+      "contentHash": "840ee25389772307"
     },
     {
       "id": "bc2155a9-67fc-404e-b6cc-ff8a01e31a8f:0",
@@ -294,13 +294,13 @@
       "filePath": "market_mcp02/invoke-u1z7f.yaml",
       "docIndex": 0,
       "assetType": "resource",
-      "lastIndexed": 1793255397118,
+      "lastIndexed": 1793257649967,
       "schemaVersion": 1,
       "kind": "Invoke",
       "name": "invoke-u1z7f",
       "namespace": "market_mcp02",
       "version": "1.0",
-      "contentHash": "3b3b2fe9bfaf3398"
+      "contentHash": "5d91ca7bc1cc0ab2"
     },
     {
       "id": "e01b86ab-b01a-4646-b012-bbba52701001:0",
@@ -317,13 +317,13 @@
       "filePath": "market_mcp02/market_mcp02-quota-y4w64.yaml",
       "docIndex": 0,
       "assetType": "resource",
-      "lastIndexed": 1793255313760,
+      "lastIndexed": 1793257600671,
       "schemaVersion": 1,
       "kind": "Quota",
       "name": "market_mcp02-quota-y4w64",
       "namespace": "market_mcp02",
       "version": "1.0",
-      "contentHash": "bcea785dd6c9e1dc"
+      "contentHash": "b07a3f5910199d9d"
     },
     {
       "id": "ed0f4d4f-8a91-4d83-a571-33b94baffdfc:0",
@@ -340,28 +340,16 @@
       "filePath": "market_mcp02/telemetry-u1z7f.yaml",
       "docIndex": 0,
       "assetType": "resource",
-      "lastIndexed": 1793255313763,
+      "lastIndexed": 1793257600672,
       "schemaVersion": 1,
       "kind": "Telemetry",
       "name": "telemetry-u1z7f",
       "namespace": "market_mcp02",
       "version": "1.0",
-      "contentHash": "f45bc594cc6dfc8b"
+      "contentHash": "59a9bf6878da4de2"
     }
   ],
   "edges": [
-    {
-      "id": "153cdd83-ae0f-47e2-b3e4-457982916b8e",
-      "projectId": "R3SdmgEg",
-      "sourceNodeId": "25c9e8c0-2ad7-4bef-ae8a-45b82a2c79a5:0",
-      "targetNodeId": "bc2155a9-67fc-404e-b6cc-ff8a01e31a8f:0",
-      "targetRefType": "same-project",
-      "targetRefString": "market_mcp02:Set-qxDuT:1.0",
-      "targetRefKind": "resource",
-      "isValid": true,
-      "createdAt": 1793255313674,
-      "lastValidated": 1793255313674
-    },
     {
       "id": "3b42d57c-903b-49be-8094-da6a0349941d",
       "projectId": "R3SdmgEg",
@@ -372,7 +360,7 @@
       "targetRefKind": "resource",
       "isValid": true,
       "createdAt": 1793255313598,
-      "lastValidated": 1793255313684
+      "lastValidated": 1793257623627
     },
     {
       "id": "591c01d2-f130-4e47-ab36-14c92203036e",
@@ -432,7 +420,7 @@
       "targetRefKind": "resource",
       "isValid": true,
       "createdAt": 1793255313674,
-      "lastValidated": 1793255397125
+      "lastValidated": 1793257649979
     },
     {
       "id": "ffda5cf5-1c37-4039-8338-8a67d34ecb47",

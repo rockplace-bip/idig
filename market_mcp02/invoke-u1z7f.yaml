@@ -18,9 +18,9 @@ spec:
           'https://wmapigw-gw-apic.apps.rosa.rp-bip-apic-dev.gxbr.p3.openshiftapps.com/gateway/IDIG_MARKET/1.0'
           & $pathAndQuery()
         urlType: jsonata
-        persistentConnections: true
+        persistentConnections: false
         timeout: 30
         decompressResponse: true
-        followRedirects: true
-        chunkedUpload: true
+        followRedirects: false
+        chunkedUpload: false
         compressRequest: gzip
