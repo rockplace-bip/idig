@@ -1,0 +1,15 @@
+kind: SQLInjectionFilter
+apiVersion: api.ibm.com/v1
+metadata:
+  name: SQLInjectionFilter-9SSvP
+  namespace: RP_IDIG_PJT_01
+  version: '1.0'
+  tags: []
+  labels:
+    gatewayTypes:
+      - nano
+spec:
+  filterOn: body
+  injectionRules:
+    predefined: []
+    custom: []

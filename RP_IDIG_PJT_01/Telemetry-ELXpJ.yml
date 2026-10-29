@@ -1,0 +1,22 @@
+kind: Telemetry
+apiVersion: api.ibm.com/v1
+metadata:
+  name: Telemetry-ELXpJ
+  namespace: RP_IDIG_PJT_01
+  version: '1.0'
+  tags: []
+  labels:
+    gatewayTypes:
+      - nano
+spec:
+  verbosity:
+    - level: normal
+      onSuccessTrimTo: basic
+      operations:
+        - method: GET
+        - method: POST
+        - method: PUT
+        - method: DELETE
+        - method: PATCH
+        - method: HEAD
+        - method: OPTIONS
