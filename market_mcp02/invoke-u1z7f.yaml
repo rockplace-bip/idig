@@ -23,4 +23,4 @@ spec:
         decompressResponse: true
         followRedirects: false
         chunkedUpload: false
-        compressRequest: gzip
+        compressRequest: none

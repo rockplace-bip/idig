@@ -294,13 +294,13 @@
       "filePath": "market_mcp02/invoke-u1z7f.yaml",
       "docIndex": 0,
       "assetType": "resource",
-      "lastIndexed": 1793257649967,
+      "lastIndexed": 1793258096140,
       "schemaVersion": 1,
       "kind": "Invoke",
       "name": "invoke-u1z7f",
       "namespace": "market_mcp02",
       "version": "1.0",
-      "contentHash": "5d91ca7bc1cc0ab2"
+      "contentHash": "993b0f0ba8eb4a13"
     },
     {
       "id": "e01b86ab-b01a-4646-b012-bbba52701001:0",
@@ -420,7 +420,7 @@
       "targetRefKind": "resource",
       "isValid": true,
       "createdAt": 1793255313674,
-      "lastValidated": 1793257649979
+      "lastValidated": 1793258096148
     },
     {
       "id": "ffda5cf5-1c37-4039-8338-8a67d34ecb47",
