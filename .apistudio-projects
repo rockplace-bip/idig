@@ -38,4 +38,9 @@ projects:
     id: qxmoL6s3
     description: ''
     tags: []
-    lastUpdated: 1793264257838
+    lastUpdated: 1793264374227
+  ICHAIN:
+    id: mYOyEVA4
+    description: ICHAIN 관련 MCP 서버
+    tags: []
+    lastUpdated: 1793325609852
