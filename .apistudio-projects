@@ -18,7 +18,7 @@ projects:
     id: Pkbjfjst
     description: ''
     tags: []
-    lastUpdated: 1793178150255
+    lastUpdated: 1793350173049
   test_ix_mcp:
     id: xGsGxrlk
     description: ''
@@ -39,8 +39,3 @@ projects:
     description: ''
     tags: []
     lastUpdated: 1793264374227
-  ICHAIN:
-    id: mYOyEVA4
-    description: ICHAIN 관련 MCP 서버
-    tags: []
-    lastUpdated: 1793325609852
