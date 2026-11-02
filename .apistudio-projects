@@ -14,11 +14,6 @@ projects:
     description: ''
     tags: []
     lastUpdated: 1793234549638
-  market_mcp03:
-    id: qxmoL6s3
-    description: ''
-    tags: []
-    lastUpdated: 1793264374227
   ICHAIN:
     id: KyFn61mi
     description: ICHAIN MCP 서버
