@@ -38,4 +38,9 @@ projects:
     id: KyFn61mi
     description: ICHAIN MCP 서버
     tags: []
-    lastUpdated: 1793606972919
+    lastUpdated: 1793613166367
+  ICHAIN_MCP:
+    id: IyRDf90W
+    description: ICHAIN_MCP 서버
+    tags: []
+    lastUpdated: 1793613883834
