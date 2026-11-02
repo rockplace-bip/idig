@@ -14,11 +14,6 @@ projects:
     description: ''
     tags: []
     lastUpdated: 1793154195179
-  ICHAIN_MCP02:
-    id: Pkbjfjst
-    description: ''
-    tags: []
-    lastUpdated: 1793350173049
   test_ix_mcp:
     id: xGsGxrlk
     description: ''
@@ -43,4 +38,4 @@ projects:
     id: KyFn61mi
     description: ICHAIN MCP 서버
     tags: []
-    lastUpdated: 1793356558012
+    lastUpdated: 1793606972919
