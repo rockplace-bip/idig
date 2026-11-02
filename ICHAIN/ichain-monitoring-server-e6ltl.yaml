@@ -1,0 +1,20 @@
+kind: MCPServer
+apiVersion: api.ibm.com/v1
+metadata:
+  name: ichain-monitoring-server-e6ltl
+  namespace: ICHAIN
+  version: "1.0"
+  tags: []
+  domain: mcp
+  labels:
+    origin: mcp-rest
+spec:
+  title: ichain-monitoring MCP Server
+  protocolVersion: V2025_11_25
+  quota:
+    $ref: ICHAIN:ichain-quota-e6ltl:1.0
+  policy-sequence:
+    - $ref: ICHAIN:ichain-freeflowpolicysequence-e6ltl:1.0
+  capabilities:
+    tools:
+      - $ref: ICHAIN:ichain-monitoring-tool-e6ltl:1.0

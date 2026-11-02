@@ -1,0 +1,17 @@
+kind: Set
+apiVersion: api.ibm.com/v1
+metadata:
+  name: Set-EddlB
+  namespace: ICHAIN
+  version: '1.0'
+  tags: []
+  labels:
+    gatewayTypes:
+      - nano
+spec:
+  messageHeader:
+    action: set
+    headerName: x-Gateway-APIKey
+    value: 79800207-3153-44b5-8f36-365a4d58de7e
+    messageName: request
+  valueType: plain

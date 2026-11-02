@@ -1,0 +1,22 @@
+kind: FreeFlowPolicySequence
+apiVersion: api.ibm.com/v1
+metadata:
+  name: ichain-freeflowpolicysequence-e6ltl
+  namespace: ICHAIN
+  version: '1.0'
+  tags: []
+  labels:
+    gatewayTypes:
+      - nano
+  domain: mcp
+spec:
+  main:
+    - $ref: ICHAIN:Set-KqtWX:1.0
+    - $ref: ICHAIN:Set-EddlB:1.0
+    - $ref: ICHAIN:Parse-6qFwR:1.0
+    - $ref: ICHAIN:Transform-uV0Fi:1.0
+    - $ref: ICHAIN:invoke-e6ltl:1.0
+    - $ref: ICHAIN:LuaScript-4svKq:1.0
+    - $ref: ICHAIN:Parse-w2KTv:1.0
+  monitoring:
+    $ref: ICHAIN:telemetry-e6ltl:1.0

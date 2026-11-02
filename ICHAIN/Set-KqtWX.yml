@@ -1,0 +1,17 @@
+kind: Set
+apiVersion: api.ibm.com/v1
+metadata:
+  name: Set-KqtWX
+  namespace: ICHAIN
+  version: '1.0'
+  tags: []
+  labels:
+    gatewayTypes:
+      - nano
+spec:
+  messageHeader:
+    action: set
+    headerName: Authorization
+    value: Bearer d9f1721de4c03bf3b6f32ccf970f6d25d47ac86a2d29cd6b2436d95cc8180616
+    messageName: request
+  valueType: plain
