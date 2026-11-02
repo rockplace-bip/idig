@@ -1,9 +1,4 @@
 projects:
-  ICHAIN_MCP01:
-    id: CzDA78bH
-    description: ''
-    tags: []
-    lastUpdated: 1792994835581
   test_ix_mcp:
     id: xGsGxrlk
     description: ''
