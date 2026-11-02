@@ -14,8 +14,8 @@ projects:
     description: ''
     tags: []
     lastUpdated: 1793234549638
-  ICHAIN:
+  ICHAIN_TEST:
     id: KyFn61mi
-    description: ICHAIN MCP 서버
+    description: ''
     tags: []
-    lastUpdated: 1793614510543
+    lastUpdated: 1793614782789
