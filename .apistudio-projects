@@ -14,13 +14,13 @@ projects:
     description: ''
     tags: []
     lastUpdated: 1793234549638
-  ICHAIN_TEST:
-    id: KyFn61mi
-    description: ''
-    tags: []
-    lastUpdated: 1793614782789
   ICHAIN_MCP:
     id: G8oQVamf
     description: ICHAIN MCP 서버
     tags: []
-    lastUpdated: 1793614883466
+    lastUpdated: 1793616658703
+  ICHAIN:
+    id: KyFn61mi
+    description: ''
+    tags: []
+    lastUpdated: 1793617705890
