@@ -1,0 +1,16 @@
+kind: FreeFlowPolicySequence
+apiVersion: api.ibm.com/v1
+metadata:
+  name: ichain_mcp_server-freeflowpolicysequence-of4iz
+  namespace: ICHAIN_MCP_SERVER
+  version: "1.0"
+  tags: []
+  domain: mcp
+  labels:
+    gatewayTypes:
+      - nano
+spec:
+  main:
+    - $ref: ICHAIN_MCP_SERVER:invoke-of4iz:1.0
+  monitoring:
+    $ref: ICHAIN_MCP_SERVER:telemetry-of4iz:1.0

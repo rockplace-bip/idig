@@ -1,0 +1,171 @@
+{
+  "nodes": [
+    {
+      "id": "82b25bda-fb60-4251-97bd-1249e9230e35:0",
+      "projectId": "BmW0NUMc",
+      "filePath": "ICHAIN_MCP_SERVER/ichain-monitoring-tool-of4iz.yaml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1793614121989,
+      "schemaVersion": 1,
+      "kind": "MCPTools",
+      "name": "ichain-monitoring-tool-of4iz",
+      "namespace": "ICHAIN_MCP_SERVER",
+      "version": "1.0",
+      "contentHash": "ab87124a76adc4c4"
+    },
+    {
+      "id": "9182b8ef-9e92-4c30-9c32-79a3ddb1a73f:0",
+      "projectId": "BmW0NUMc",
+      "filePath": "ICHAIN_MCP_SERVER/invoke-of4iz.yaml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1793614151707,
+      "schemaVersion": 1,
+      "kind": "Invoke",
+      "name": "invoke-of4iz",
+      "namespace": "ICHAIN_MCP_SERVER",
+      "version": "1.0",
+      "contentHash": "be216c5db3f2c7aa"
+    },
+    {
+      "id": "a32a6cbf-0d90-40d2-8457-b677c8375e78:0",
+      "projectId": "BmW0NUMc",
+      "filePath": "ICHAIN_MCP_SERVER/ichain_mcp_server-quota-of4iz.yaml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1793614121354,
+      "schemaVersion": 1,
+      "kind": "Quota",
+      "name": "ichain_mcp_server-quota-of4iz",
+      "namespace": "ICHAIN_MCP_SERVER",
+      "version": "1.0",
+      "contentHash": "aaac063b4c399396"
+    },
+    {
+      "id": "af6b59e3-eb00-45d9-aaef-09b9dfcfacf7:0",
+      "projectId": "BmW0NUMc",
+      "filePath": "ICHAIN_MCP_SERVER/ichain-monitoring-server-of4iz.yaml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1793614122627,
+      "schemaVersion": 1,
+      "kind": "MCPServer",
+      "name": "ichain-monitoring-server-of4iz",
+      "namespace": "ICHAIN_MCP_SERVER",
+      "version": "1.0",
+      "contentHash": "c408833bd788b24f"
+    },
+    {
+      "id": "dcf21f31-ba5f-4f68-9e0e-03ddfe25daec:0",
+      "projectId": "BmW0NUMc",
+      "filePath": "ICHAIN_MCP_SERVER/ichain_mcp_server-freeflowpolicysequence-of4iz.yaml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1793614120657,
+      "schemaVersion": 1,
+      "kind": "FreeFlowPolicySequence",
+      "name": "ichain_mcp_server-freeflowpolicysequence-of4iz",
+      "namespace": "ICHAIN_MCP_SERVER",
+      "version": "1.0",
+      "contentHash": "741be292614dd378"
+    },
+    {
+      "id": "e9d0fa90-459d-4686-9cdd-c7d1cf8aaabd:0",
+      "projectId": "BmW0NUMc",
+      "filePath": "ICHAIN_MCP_SERVER/ichain-monitoring-spec.yml",
+      "docIndex": 0,
+      "assetType": "support",
+      "lastIndexed": 1793614118060,
+      "schemaVersion": 1
+    },
+    {
+      "id": "ee31c313-d1cf-42fa-b4c6-81c8e16ccbc8:0",
+      "projectId": "BmW0NUMc",
+      "filePath": "ICHAIN_MCP_SERVER/telemetry-of4iz.yaml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1793614120020,
+      "schemaVersion": 1,
+      "kind": "Telemetry",
+      "name": "telemetry-of4iz",
+      "namespace": "ICHAIN_MCP_SERVER",
+      "version": "1.0",
+      "contentHash": "1a906dd7b1a5348e"
+    }
+  ],
+  "edges": [
+    {
+      "id": "21b801a2-febd-4f05-94e8-212b28a7a0e0",
+      "projectId": "BmW0NUMc",
+      "sourceNodeId": "dcf21f31-ba5f-4f68-9e0e-03ddfe25daec:0",
+      "targetNodeId": "ee31c313-d1cf-42fa-b4c6-81c8e16ccbc8:0",
+      "targetRefType": "same-project",
+      "targetRefString": "ICHAIN_MCP_SERVER:telemetry-of4iz:1.0",
+      "targetRefKind": "resource",
+      "isValid": true,
+      "createdAt": 1793614120670,
+      "lastValidated": 1793614120670
+    },
+    {
+      "id": "3595c0e4-4f1e-4586-851c-ec5b1fd724d9",
+      "projectId": "BmW0NUMc",
+      "sourceNodeId": "af6b59e3-eb00-45d9-aaef-09b9dfcfacf7:0",
+      "targetNodeId": "82b25bda-fb60-4251-97bd-1249e9230e35:0",
+      "targetRefType": "same-project",
+      "targetRefString": "ICHAIN_MCP_SERVER:ichain-monitoring-tool-of4iz:1.0",
+      "targetRefKind": "resource",
+      "isValid": true,
+      "createdAt": 1793614122637,
+      "lastValidated": 1793614122637
+    },
+    {
+      "id": "4dcbe5f2-6e82-4b93-b014-ac6c60da31dd",
+      "projectId": "BmW0NUMc",
+      "sourceNodeId": "dcf21f31-ba5f-4f68-9e0e-03ddfe25daec:0",
+      "targetNodeId": "9182b8ef-9e92-4c30-9c32-79a3ddb1a73f:0",
+      "targetRefType": "same-project",
+      "targetRefString": "ICHAIN_MCP_SERVER:invoke-of4iz:1.0",
+      "targetRefKind": "resource",
+      "isValid": true,
+      "createdAt": 1793614120670,
+      "lastValidated": 1793614151717
+    },
+    {
+      "id": "5c173cf8-3bd7-4d83-ad75-897a285bfdc7",
+      "projectId": "BmW0NUMc",
+      "sourceNodeId": "82b25bda-fb60-4251-97bd-1249e9230e35:0",
+      "targetNodeId": "e9d0fa90-459d-4686-9cdd-c7d1cf8aaabd:0",
+      "targetRefType": "same-project",
+      "targetRefString": "./ichain-monitoring-spec.yml",
+      "targetRefKind": "support",
+      "isValid": true,
+      "createdAt": 1793614122000,
+      "lastValidated": 1793614122000
+    },
+    {
+      "id": "8539fa1f-bde2-402b-88b0-f0730e999bb2",
+      "projectId": "BmW0NUMc",
+      "sourceNodeId": "af6b59e3-eb00-45d9-aaef-09b9dfcfacf7:0",
+      "targetNodeId": "dcf21f31-ba5f-4f68-9e0e-03ddfe25daec:0",
+      "targetRefType": "same-project",
+      "targetRefString": "ICHAIN_MCP_SERVER:ichain_mcp_server-freeflowpolicysequence-of4iz:1.0",
+      "targetRefKind": "resource",
+      "isValid": true,
+      "createdAt": 1793614122637,
+      "lastValidated": 1793614122637
+    },
+    {
+      "id": "dde66b98-cc47-4cd4-99bf-b3064469c42b",
+      "projectId": "BmW0NUMc",
+      "sourceNodeId": "af6b59e3-eb00-45d9-aaef-09b9dfcfacf7:0",
+      "targetNodeId": "a32a6cbf-0d90-40d2-8457-b677c8375e78:0",
+      "targetRefType": "same-project",
+      "targetRefString": "ICHAIN_MCP_SERVER:ichain_mcp_server-quota-of4iz:1.0",
+      "targetRefKind": "resource",
+      "isValid": true,
+      "createdAt": 1793614122638,
+      "lastValidated": 1793614122638
+    }
+  ]
+}
