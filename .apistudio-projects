@@ -19,3 +19,8 @@ projects:
     description: ''
     tags: []
     lastUpdated: 1793614782789
+  ICHAIN_MCP:
+    id: G8oQVamf
+    description: ICHAIN MCP 서버
+    tags: []
+    lastUpdated: 1793614883466
