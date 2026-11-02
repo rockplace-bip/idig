@@ -1,9 +1,4 @@
 projects:
-  RP_IDIG_PJT_01:
-    id: 3Rs0LGef
-    description: ''
-    tags: []
-    lastUpdated: 1793073509723
   ICHAIN_MCP01:
     id: CzDA78bH
     description: ''
