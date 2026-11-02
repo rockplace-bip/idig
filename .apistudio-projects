@@ -9,11 +9,6 @@ projects:
     description: ''
     tags: []
     lastUpdated: 1792994835581
-  ICHAIN_LLM01:
-    id: WKh8jh4R
-    description: ''
-    tags: []
-    lastUpdated: 1793154195179
   test_ix_mcp:
     id: xGsGxrlk
     description: ''
