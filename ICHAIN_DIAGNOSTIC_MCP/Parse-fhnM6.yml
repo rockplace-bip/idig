@@ -1,0 +1,15 @@
+kind: Parse
+apiVersion: api.ibm.com/v1
+metadata:
+  name: Parse-fhnM6
+  namespace: ICHAIN_DIAGNOSTIC_MCP
+  version: '1.0'
+  tags: []
+  labels:
+    gatewayTypes:
+      - nano
+spec:
+  documentType:
+    detectByContentType: {}
+  input: response
+  output: response

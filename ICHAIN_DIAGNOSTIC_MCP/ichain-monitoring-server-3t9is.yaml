@@ -1,0 +1,20 @@
+kind: MCPServer
+apiVersion: api.ibm.com/v1
+metadata:
+  name: ichain-monitoring-server-3t9is
+  namespace: ICHAIN_DIAGNOSTIC_MCP
+  version: "1.0"
+  tags: []
+  domain: mcp
+  labels:
+    origin: mcp-rest
+spec:
+  title: ichain-monitoring MCP Server
+  protocolVersion: V2025_11_25
+  quota:
+    $ref: ICHAIN_DIAGNOSTIC_MCP:ichain_diagnostic_mcp-quota-3t9is:1.0
+  policy-sequence:
+    - $ref: ICHAIN_DIAGNOSTIC_MCP:ichain_diagnostic_mcp-freeflowpolicysequence-3t9is:1.0
+  capabilities:
+    tools:
+      - $ref: ICHAIN_DIAGNOSTIC_MCP:ichain-monitoring-tool-3t9is:1.0

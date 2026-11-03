@@ -1,0 +1,21 @@
+kind: FreeFlowPolicySequence
+apiVersion: api.ibm.com/v1
+metadata:
+  name: ichain_diagnostic_mcp-freeflowpolicysequence-3t9is
+  namespace: ICHAIN_DIAGNOSTIC_MCP
+  version: '1.0'
+  tags: []
+  labels:
+    gatewayTypes:
+      - nano
+  domain: mcp
+spec:
+  main:
+    - $ref: ICHAIN_DIAGNOSTIC_MCP:Set-0Nz8S:1.0
+    - $ref: ICHAIN_DIAGNOSTIC_MCP:Set-fKx94:1.0
+    - $ref: ICHAIN_DIAGNOSTIC_MCP:Parse-soUWe:1.0
+    - $ref: ICHAIN_DIAGNOSTIC_MCP:Transform-UZqWx:1.0
+    - $ref: ICHAIN_DIAGNOSTIC_MCP:invoke-3t9is:1.0
+    - $ref: ICHAIN_DIAGNOSTIC_MCP:Parse-fhnM6:1.0
+  monitoring:
+    $ref: ICHAIN_DIAGNOSTIC_MCP:telemetry-3t9is:1.0
