@@ -14,11 +14,6 @@ projects:
     description: ''
     tags: []
     lastUpdated: 1793234549638
-  ICHAIN:
-    id: KyFn61mi
-    description: ''
-    tags: []
-    lastUpdated: 1793688033977
   ICHAIN_MCP001:
     id: ADtTsPjx
     description: ''

@@ -1,12 +1,0 @@
-kind: LuaScript
-apiVersion: api.ibm.com/v1
-metadata:
-  name: LuaScript-4svKq
-  namespace: ICHAIN
-  version: '1.0'
-  tags: []
-  labels:
-    gatewayTypes:
-      - nano
-spec:
-  source: "local response = context:get_message(\"response\")\r\n\r\nif response == nil then\r\n    error(\"Response message not found\")\r\nend\r\n\r\nlocal payload = response.body:read()\r\nlocal raw\r\n\r\nif type(payload) == \"string\" then\r\n    raw = payload\r\nelse\r\n    local ok, result = pcall(function()\r\n        return payload:tostring()\r\n    end)\r\n\r\n    if not ok then\r\n        error(\"Expected unparsed JSON buffer\")\r\n    end\r\n\r\n    raw = result\r\nend\r\n\r\n-- JSON 0�x ���� �\ �0\r\nif string.match(raw, \"^%s*%[\") then\r\n    local wrapped = '{\"items\":' .. raw .. '}'\r\n    response.body:write(buffer.from_string(wrapped))\r\n    response.headers:set(\"Content-Type\", \"application/json\")\r\n    console.info(\"ICHAIN: array response wrapped\")\r\nend"
