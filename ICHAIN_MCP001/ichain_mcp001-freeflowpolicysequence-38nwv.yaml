@@ -1,0 +1,22 @@
+kind: FreeFlowPolicySequence
+apiVersion: api.ibm.com/v1
+metadata:
+  name: ichain_mcp001-freeflowpolicysequence-38nwv
+  namespace: ICHAIN_MCP001
+  version: '1.0'
+  tags: []
+  labels:
+    gatewayTypes:
+      - nano
+  domain: mcp
+spec:
+  main:
+    - $ref: ICHAIN_MCP001:Set-NYlO6:1.0
+    - $ref: ICHAIN_MCP001:Set-qvnbh:1.0
+    - $ref: ICHAIN_MCP001:Parse-IJqFb:1.0
+    - $ref: ICHAIN_MCP001:Transform-sHu5c:1.0
+    - $ref: ICHAIN_MCP001:invoke-38nwv:1.0
+    - $ref: ICHAIN_MCP001:Parse-FKAJ7:1.0
+    - $ref: ICHAIN_MCP001:LuaScript-EkyZ5:1.0
+  monitoring:
+    $ref: ICHAIN_MCP001:telemetry-38nwv:1.0

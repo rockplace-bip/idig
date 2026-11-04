@@ -1,0 +1,12 @@
+kind: LuaScript
+apiVersion: api.ibm.com/v1
+metadata:
+  name: LuaScript-EkyZ5
+  namespace: ICHAIN_MCP001
+  version: '1.0'
+  tags: []
+  labels:
+    gatewayTypes:
+      - nano
+spec:
+  source: "local response = context:get_message(\"response\")\r\n\r\nif response == nil then\r\n    error(\"Response message not found\")\r\nend\r\n\r\nlocal payload = response.body:read()\r\n\r\nif payload == nil then\r\n    console.info(\"ICHAIN: empty response body\")\r\n    return\r\nend\r\n\r\nlocal payload_type = type(payload)\r\nconsole.info(\"ICHAIN: response body type = \" .. payload_type)\r\n\r\nif payload_type == \"table\" then\r\n\r\n    -- Wrap JSON arrays only\r\n    if #payload > 0 then\r\n        response.body:write({ items = payload })\r\n        response.headers:set(\"Content-Type\", \"application/json\")\r\n        console.info(\"ICHAIN: array response wrapped\")\r\n    end\r\n\r\nelseif payload_type == \"string\" then\r\n\r\n    -- Parse JSON string\r\n    local ok, parsed = pcall(function()\r\n        return json.decode(payload)\r\n    end)\r\n\r\n    if ok and type(parsed) == \"table\" and #parsed > 0 then\r\n        response.body:write({ items = parsed })\r\n        response.headers:set(\"Content-Type\", \"application/json\")\r\n        console.info(\"ICHAIN: string array response wrapped\")\r\n    end\r\n\r\nelse\r\n    console.info(\"ICHAIN: response body not modified\")\r\nend"

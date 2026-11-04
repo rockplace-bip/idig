@@ -1,0 +1,50 @@
+kind: Transform
+apiVersion: api.ibm.com/v1
+metadata:
+  name: Transform-sHu5c
+  namespace: ICHAIN_MCP001
+  version: '1.0'
+  tags: []
+  labels:
+    gatewayTypes:
+      - nano
+spec:
+  messageUriQuery:
+    messageName: request
+    jsonataTransforms:
+      - queryNames:
+          - from
+        action: add
+        transform: $body("request").from
+      - queryNames:
+          - to
+        action: add
+        transform: $body("request").to
+      - queryNames:
+          - limit
+        action: add
+        transform: $body("request").limit
+      - queryNames:
+          - cursor
+        action: add
+        transform: $body("request").cursor
+      - queryNames:
+          - serviceLayer
+        action: add
+        transform: $body("request").serviceLayer
+      - queryNames:
+          - instanceId
+        action: add
+        transform: $body("request").instanceId
+      - queryNames:
+          - interfaceId
+        action: add
+        transform: $body("request").interfaceId
+      - queryNames:
+          - status
+        action: add
+        transform: $body("request").status
+      - queryNames:
+          - mappingState
+        action: add
+        transform: $body("request").mappingState
